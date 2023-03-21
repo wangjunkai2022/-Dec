@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/fragment_webview_tollbar_layout" android:background="@color/colorPrimaryDark" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.biquge.ebook.app.widget.StatusBarView android:id="@+id/fragment_webview_tollbarview" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textSize="16sp" android:textColor="@color/color_ffffff" android:gravity="center" android:layout_gravity="center" android:id="@+id/fragment_webview_title_txt" android:layout_width="wrap_content" android:layout_height="@dimen/titlebar_height" android:layout_marginLeft="50dp" android:layout_marginRight="50dp" android:singleLine="true" android:layout_below="@+id/fragment_webview_tollbarview" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/fragment_home_search_bt" android:layout_width="wrap_content" android:layout_height="@dimen/titlebar_height" android:src="@drawable/search" android:layout_below="@+id/fragment_webview_tollbarview" android:layout_alignParentRight="true" android:paddingStart="15dp" android:paddingEnd="18dp"/>
+    </RelativeLayout>
+    <include android:id="@+id/framelayout_webview_toolbar" android:visibility="gone" layout="@layout/include_header_layout"/>
+    <com.chanven.lib.cptr.PtrClassicFrameLayout android:id="@+id/activity_webview_refresh_layout" android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="match_parent" cube_ptr:hz="100" cube_ptr:i0="1000" cube_ptr:i2="true" cube_ptr:i3="false" cube_ptr:i4="1" cube_ptr:i5="4.6">
+        <com.biquge.ebook.app.widget.browse.ProgressBarWebView android:id="@+id/fragment_webview" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/fq"/>
+    </com.chanven.lib.cptr.PtrClassicFrameLayout>
+</LinearLayout>

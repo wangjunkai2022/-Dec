@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.biquge.ebook.app.widget.HeaderView android:id="@+id/activity_feedback_actionbar" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ScrollView android:id="@+id/parent_sv" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14sp" android:textColor="@color/color_000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="请选择你要反馈的问题"/>
+            <com.google.android.flexbox.FlexboxLayout android:id="@+id/feedback_ans_flexbox_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10dp" android:paddingEnd="10dp" app:c="5" app:da="0" app:db="1" app:e6="0" app:fi="1.5"/>
+            <View android:background="@color/color_F8F8F8" android:layout_width="match_parent" android:layout_height="6dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+            <TextView android:textSize="14sp" android:textColor="@color/color_000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请输入联系信息（选填）" android:layout_marginStart="10dp"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:textSize="12sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="联系方式 1"/>
+                <EditText android:textSize="13sp" android:textColor="@color/color_000000" android:textColorHint="#ffbbbbbb" android:gravity="center_vertical" android:id="@+id/register_phone_et" android:background="@drawable/shape_search_white_bg" android:layout_width="match_parent" android:layout_height="35dp" android:hint="留下您的电话号码或邮箱" android:singleLine="true" android:inputType="textVisiblePassword" android:paddingStart="10dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+            </LinearLayout>
+            <View android:layout_marginTop="10dp" style="@style/sc"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:textSize="12sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="联系方式 2"/>
+                <EditText android:textSize="13sp" android:textColor="@color/color_000000" android:textColorHint="#ffbbbbbb" android:gravity="center_vertical" android:id="@+id/register_weixin_qq_et" android:background="@drawable/shape_search_white_bg" android:layout_width="match_parent" android:layout_height="35dp" android:hint="留下您的的QQ号/微信号" android:singleLine="true" android:inputType="number" android:paddingStart="10dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+            </LinearLayout>
+            <View android:background="@color/color_F8F8F8" android:layout_width="match_parent" android:layout_height="6dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+            <TextView android:textSize="14sp" android:textColor="@color/color_000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您的建议" android:layout_marginStart="10dp"/>
+            <RelativeLayout android:background="@drawable/shape_search_white_bg" android:layout_width="match_parent" android:layout_height="180dp" android:layout_margin="10dp">
+                <EditText android:textSize="13sp" android:textColor="@color/color_666666" android:textColorHint="#ffbbbbbb" android:gravity="top|left" android:id="@+id/input_et" android:background="@null" android:padding="12dp" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="欢迎您提出任何意见或建议，我们将非常重视，谢谢您！至少输入6个字符哦～"/>
+                <TextView android:textSize="13sp" android:textColor="@color/color_666666" android:id="@+id/number_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/v" android:layout_marginRight="@dimen/v" android:layout_marginBottom="@dimen/v" android:text="0/200" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/v" android:layout_marginEnd="@dimen/v"/>
+            </RelativeLayout>
+            <TextView android:textSize="12sp" android:autoLink="all" android:id="@+id/commit_tips_txt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/feedback_gw_url_txt" android:layout_marginStart="10dp" android:layout_marginEnd="20dp"/>
+            <TextView android:textSize="16sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@+id/commit_bt" android:background="@drawable/selector_red_semicircle_bg" android:layout_width="match_parent" android:layout_height="43dp" android:layout_marginLeft="20dp" android:layout_marginTop="60dp" android:layout_marginRight="20dp" android:text="立即提交"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="jr" parent="@style/jp">
+    </style>
+    <style name="js" parent="@style/jp">
+    </style>
+    <style name="jt" parent="@style/jy">
+    </style>
+    <style name="ju" parent="@style/jz">
+    </style>
+    <style name="jv" parent="@style/k0">
+    </style>
+    <style name="jw" parent="@style/k1">
+    </style>
+    <style name="jx" parent="@style/k_">
+    </style>
+    <style name="kk" parent="@style/kg">
+    </style>
+    <style name="kl" parent="@style/kh">
+    </style>
+    <style name="km" parent="@style/ki">
+    </style>
+    <style name="kn" parent="@style/kg">
+    </style>
+    <style name="ko" parent="@style/ki">
+    </style>
+    <style name="kp" parent="@style/l0">
+    </style>
+    <style name="kq" parent="@style/l1">
+    </style>
+    <style name="kr" parent="@style/l2">
+    </style>
+    <style name="ks" parent="@style/l3">
+    </style>
+    <style name="kt" parent="@style/l4">
+    </style>
+    <style name="ku" parent="@style/l5">
+    </style>
+    <style name="kv" parent="@style/l6">
+    </style>
+    <style name="kw" parent="@style/l7">
+    </style>
+    <style name="kx" parent="@style/l8">
+    </style>
+    <style name="ky" parent="@style/lq">
+    </style>
+    <style name="kz" parent="@style/lr">
+    </style>
+    <style name="lw" parent="@style/lu">
+    </style>
+    <style name="mf" parent="@style/mc">
+    </style>
+    <style name="ph" parent="@style/pj">
+    </style>
+    <style name="pl" parent="@style/pm">
+    </style>
+    <style name="pu" parent="@style/ps">
+    </style>
+    <style name="px" parent="@style/pv">
+    </style>
+    <style name="rj" parent="@style/rh">
+    </style>
+    <style name="rz" parent="@style/s0">
+    </style>
+</resources>

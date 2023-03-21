@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/simple_bg_selector" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/item_comic_image" android:layout_width="@dimen/comic_image_list_width" android:layout_height="@dimen/comic_image_list_height" android:scaleType="centerCrop"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_weight="1">
+        <TextView android:textSize="15sp" android:textColor="@color/color_333333" android:id="@+id/item_comic_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        <TextView android:textSize="12sp" android:textColor="@color/color_666666" android:id="@+id/item_comic_type_tv" android:background="@drawable/shape_tag_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:singleLine="true"/>
+        <TextView android:textSize="12sp" android:textColor="@color/color_666666" android:id="@+id/item_comic_author_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:singleLine="true"/>
+        <TextView android:textSize="12sp" android:textColor="@color/color_999999" android:ellipsize="end" android:id="@+id/item_comic_info_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:lines="2" android:drawablePadding="3dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/cb_choose_layout" android:visibility="gone" android:layout_width="50dp" android:layout_height="match_parent">
+        <ImageView android:id="@+id/cb_select" android:padding="10dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_plus"/>
+        <ImageView android:id="@+id/cb_choose" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_select_book"/>
+        <TextView android:textSize="12sp" android:textColor="@color/color_666666" android:id="@+id/tv_choose" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/element_fixate_select_txt"/>
+    </LinearLayout>
+</LinearLayout>

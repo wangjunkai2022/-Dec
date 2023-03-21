@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.biquge.ebook.app.widget.HeaderView android:id="@+id/activity_disclaimer_actionbar" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ScrollView android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:id="@+id/disclaimer_content_txt" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.2"/>
+    </ScrollView>
+</LinearLayout>

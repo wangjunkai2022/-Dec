@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chanven.lib.cptr.PtrClassicFrameLayout android:id="@+id/fragment_shelf_ptr_layout" android:layout_width="match_parent" android:layout_height="match_parent" cube_ptr:hz="100" cube_ptr:i0="1000" cube_ptr:i2="true" cube_ptr:i3="false" cube_ptr:i4="1" cube_ptr:i5="3">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/fragment_shelf_recyclerview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.chanven.lib.cptr.PtrClassicFrameLayout>
+    <ViewStub android:id="@+id/fragment_book_shelf_empty_layout" android:layout="@layout/include_shelf_empty_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/fragment_cartton_tg_layout" android:layout="@layout/include_mhtg_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/new_share_page_view" android:layout="@layout/include_share_detail_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

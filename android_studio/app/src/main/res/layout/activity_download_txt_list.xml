@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:layout_gravity="bottom|right" android:id="@+id/activity_txt_download_toolbar_more_tag" android:layout_width="0.5dp" android:layout_height="1dp" android:layout_marginBottom="9dp"/>
+        <include android:id="@+id/activity_download_txt_actionbar" layout="@layout/include_header_layout"/>
+    </FrameLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="45dp">
+        <com.shizhefei.view.indicator.FixedIndicatorView android:id="@+id/activity_download_txt_indicator" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/edit_select_layout" android:background="@color/main_bg_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:textSize="14sp" android:textColor="@color/main_tab_txt_color" android:gravity="center" android:id="@+id/edit_select_all_bt" android:background="@drawable/simple_bg_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="10dp" android:text="@string/main_select_all" android:layout_weight="1" style="?android:attr/buttonBarButtonStyle"/>
+            <Button android:textSize="14sp" android:textColor="@color/main_tab_txt_color" android:gravity="center" android:id="@+id/edit_delete_bt" android:background="@drawable/simple_bg_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="@string/main_delete" android:layout_weight="1" style="?android:attr/buttonBarButtonStyle"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View style="@style/sc"/>
+    <com.shizhefei.view.viewpager.SViewPager android:id="@+id/activity_download_txt_viewPager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

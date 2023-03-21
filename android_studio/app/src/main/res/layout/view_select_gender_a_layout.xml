@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/color_ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_above="@+id/cb_choose_men_parant_layout" android:layout_marginStart="22dp">
+        <TextView android:textSize="25sp" android:textStyle="bold" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/welcome_select_gender_two_txt" android:lineSpacingMultiplier="1.5"/>
+        <TextView android:textSize="14sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/welcome_select_gender_txt" android:lineSpacingMultiplier="1.5"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/cb_choose_men_parant_layout" android:paddingBottom="50dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_centerInParent="true" android:layout_marginStart="15dp" android:layout_marginEnd="15dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/cb_choose_men_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:id="@+id/cb_men_to_man" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/splash_to_main_txt"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/shape_cyan_bg" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/man" android:scaleType="centerCrop"/>
+                <TextView android:textSize="30sp" android:textColor="@drawable/selector_welcome_sex_txt" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/welcome_men_book_txt" android:drawablePadding="3dp" android:layout_weight="1" android:layout_marginStart="10dp"/>
+                <ImageView android:id="@+id/cb_choose_men_title" android:layout_width="25dp" android:layout_height="25dp" android:layout_margin="10dp" android:src="@drawable/selector_red_check"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/cb_choose_women_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:id="@+id/cb_women_to_man" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/splash_to_main_txt"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/shape_cyan_bg" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/woman" android:scaleType="fitXY"/>
+                <TextView android:textSize="30sp" android:textColor="@drawable/selector_welcome_sex_txt" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/welcome_women_book_txt" android:drawablePadding="3dp" android:layout_weight="1" android:layout_marginStart="10dp"/>
+                <ImageView android:id="@+id/cb_choose_women_title" android:layout_width="25dp" android:layout_height="25dp" android:layout_margin="10dp" android:src="@drawable/selector_red_check"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/color_brown" android:gravity="center" android:id="@+id/welcome_skip_bt" android:background="@drawable/selector_splash_skip_bg" android:padding="15dp" android:layout_width="120dp" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/ad_skip_txt" android:layout_below="@+id/cb_choose_men_parant_layout" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ratingbar="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_dialog_tips_bg" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="300dp">
+        <TextView android:textSize="18sp" android:textColor="@color/color_666666" android:ellipsize="end" android:id="@+id/dialog_star_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/tips_tip_title_txt"/>
+        <ImageView android:id="@+id/dialog_star_image" android:layout_width="@dimen/comic_image_list_width" android:layout_height="@dimen/comic_image_list_height" android:scaleType="centerCrop"/>
+        <TextView android:textSize="14sp" android:textColor="@color/color_666666" android:id="@+id/dialog_star_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="您的评分：" android:lineSpacingMultiplier="1.2"/>
+        <com.biquge.ebook.app.widget.StarBarView android:id="@+id/dialog_star_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" ratingbar:jy="5" ratingbar:jz="5dp" ratingbar:k0="@drawable/s_star_none" ratingbar:k1="@drawable/s_star_all" ratingbar:k2="20dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <Button android:textSize="14sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@+id/dialog_star_cancel" android:background="@drawable/selector_register_bg" android:layout_width="80dp" android:layout_height="35dp" android:text="@string/main_cancel" style="?android:attr/buttonBarButtonStyle"/>
+        <Button android:textSize="14sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@+id/dialog_star_ok" android:background="@drawable/selector_register_bg" android:layout_width="80dp" android:layout_height="35dp" android:layout_marginLeft="40dp" android:text="@string/main_confirm" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.google.android.material.appbar.AppBarLayout android:id="@+id/category_class_coorinatorlayout" android:background="@color/main_bg_color" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="com.biquge.ebook.app.widget.AppBarLayoutBehavior">
+                <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="0x3">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="2">
+                        <com.shizhefei.view.indicator.ScrollIndicatorView android:id="@+id/header_ranking_type_indicator" android:layout_width="match_parent" android:layout_height="43dp" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+                        <com.shizhefei.view.indicator.ScrollIndicatorView android:id="@+id/header_ranking_rank_indicator" android:layout_width="match_parent" android:layout_height="43dp" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+                        <com.shizhefei.view.indicator.ScrollIndicatorView android:id="@+id/header_ranking_category_indicator" android:layout_width="match_parent" android:layout_height="43dp" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+                        <com.shizhefei.view.indicator.ScrollIndicatorView android:id="@+id/header_ranking_channel_indicator" android:layout_width="match_parent" android:layout_height="43dp" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+                        <com.shizhefei.view.indicator.ScrollIndicatorView android:id="@+id/header_ranking_week_indicator" android:layout_width="match_parent" android:layout_height="43dp" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+                    </LinearLayout>
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <com.chanven.lib.cptr.PtrClassicFrameLayout android:id="@+id/refresh_rv_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:hz="100" app:i0="1000" app:i2="true" app:i3="false" app:i4="1" app:i5="3.5">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/fragment_video_filtrate_recyclerview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </com.chanven.lib.cptr.PtrClassicFrameLayout>
+                <TextView android:textSize="14sp" android:textColor="@color/main_tab_txt_color" android:gravity="center" android:id="@+id/fragment_video_filtrate_header_txt" android:background="@color/color_F8F8F8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp"/>
+            </FrameLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+    <com.manhua.ui.widget.PublicLoadingView android:id="@+id/fragment_video_filtrate_loading" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

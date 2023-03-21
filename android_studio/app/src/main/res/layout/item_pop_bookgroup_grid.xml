@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="@drawable/simple_bg_selector" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="@dimen/comic_image_list_width" android:layout_height="@dimen/comic_image_list_height">
+        <com.biquge.ebook.app.widget.NightRecyclerView android:id="@+id/item_pop_bookgroup_icons" android:padding="2dp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TextView android:textSize="15sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/item_pop_bookgroup_icon_view" android:background="@drawable/shape_bookgroup_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/item_book_shelf_new_flag_view" android:visibility="gone" android:layout_width="@dimen/icon_new_tag_size" android:layout_height="@dimen/icon_new_tag_size" android:src="@drawable/ic_book_update_flag"/>
+        <TextView android:textSize="8dp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@+id/item_book_shelf_stick_view" android:background="@drawable/view_stick_bg" android:paddingLeft="15dp" android:visibility="gone" android:layout_width="50dp" android:layout_height="15dp" android:layout_marginLeft="-20dp" android:text="@string/main_menu_pop_stick" android:layout_alignBottom="@+id/item_pop_bookgroup_icons"/>
+    </RelativeLayout>
+    <TextView android:textSize="13sp" android:textColor="@color/color_333333" android:id="@+id/item_book_shlef_grid_name" android:layout_width="80dp" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:singleLine="true"/>
+</LinearLayout>

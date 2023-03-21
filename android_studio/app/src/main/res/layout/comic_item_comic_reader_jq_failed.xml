@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="@drawable/shape_default_mh_item" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/comic_jq_login_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mh_unlock_chapter_need_login_txt"/>
+        <TextView android:textSize="14sp" android:textColor="@color/color_ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/comic_jq_need_login_btn" android:background="@drawable/simple_button_share_ad_selector" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="120dp" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="@string/mh_unlock_chapter_to_login"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/comic_jq_failed_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_content_parse_failure" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+            <TextView android:textSize="14sp" android:textColor="@color/main_tab_txt_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/comic_jq_error_refresh_btn" android:background="@drawable/shape_indicator_tab_stroke_bt" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="100dp" android:layout_height="wrap_content" android:text="@string/tips_reload_txt" android:layout_marginEnd="20dp"/>
+            <TextView android:textSize="14sp" android:textColor="@color/main_tab_txt_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/comic_jq_error_feed_callback_btn" android:background="@drawable/shape_indicator_tab_stroke_bt" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="100dp" android:layout_height="wrap_content" android:text="@string/main_problem_feedback_txt" android:layout_marginStart="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

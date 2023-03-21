@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.shizhefei.view.viewpager.SViewPager android:id="@+id/activity_search_viewPager" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <View style="@style/sc"/>
+    <com.shizhefei.view.indicator.ScrollIndicatorView android:id="@+id/activity_search_indicator" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="50dp"/>
+</LinearLayout>

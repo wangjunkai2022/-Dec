@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.shizhefei.view.viewpager.SViewPager android:id="@+id/fragment_main_viewPager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.biquge.ebook.app.ui.view.ContinueReadLayout android:layout_gravity="bottom" android:id="@+id/main_continue_read_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+    </FrameLayout>
+    <View style="@style/sc"/>
+    <com.biquge.ebook.app.widget.MainBottomNavigationView android:id="@+id/activity_main_navigation" android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="wrap_content" app:itemIconTint="@drawable/selector_txt_main" app:itemTextColor="@drawable/selector_txt_main" app:labelVisibilityMode="1" app:menu="@menu/menu_main_bottom_nav"/>
+</LinearLayout>

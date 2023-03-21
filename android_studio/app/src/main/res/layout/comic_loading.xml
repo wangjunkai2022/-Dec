@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="14sp" android:textColor="@color/color_666666" android:layout_gravity="center_horizontal" android:id="@+id/comic_loading_title_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80dp"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/comic_loading_loading_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30dp">
+        <ImageView android:id="@+id/iv_comic_loading" android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/comic_image_loading"/>
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/comic_progressBar" android:visibility="visible" android:layout_width="230dp" android:layout_height="5dp" android:layout_marginTop="5dp" android:max="10" android:progress="0" android:progressDrawable="@drawable/shape_loading_progressbar_style" style="?android:attr/progressBarStyleHorizontal"/>
+    </LinearLayout>
+    <ViewStub android:id="@+id/code_status_failed_layout" android:visibility="gone" android:layout="@layout/code_status_failed_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

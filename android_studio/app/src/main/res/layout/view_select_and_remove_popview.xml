@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View style="@style/sc"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10dp" android:paddingTop="8dp" android:paddingRight="10dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="55dp">
+        <Button android:textSize="14sp" android:textColor="@color/main_tab_txt_color" android:gravity="center" android:id="@+id/edit_select_all_bt" android:background="@drawable/simple_bg_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="10dp" android:text="@string/main_select_all" android:layout_weight="1"/>
+        <Button android:textSize="14sp" android:textColor="@color/main_tab_txt_color" android:gravity="center" android:id="@+id/edit_delete_bt" android:background="@drawable/simple_bg_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="@string/main_delete" android:layout_weight="1"/>
+        <Button android:textSize="14sp" android:textColor="@color/main_tab_txt_color" android:gravity="center" android:id="@+id/edit_group_bt" android:background="@drawable/simple_bg_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="@string/main_menu_pop_book_group" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

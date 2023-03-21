@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/shape_dialog_tips_bg" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textColor="@color/color_333333" android:id="@+id/a97" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="22dp" android:text="" style="@style/s3"/>
+    <TextView android:textSize="15sp" android:textColor="@color/color_333333" android:id="@+id/a8w" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:lineSpacingMultiplier="1.2"/>
+    <TextView android:textSize="13sp" android:textColor="@color/color_wathet" android:autoLink="all" android:id="@+id/tv_link" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/permissions_defulat_html_txt"/>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+        <TextView android:textSize="16sp" android:textColor="@color/color_000000" android:id="@+id/a8t" android:background="?android:attr/selectableItemBackground" android:paddingLeft="18dp" android:paddingTop="10dp" android:paddingRight="18dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:text="@string/main_cancel"/>
+        <TextView android:textSize="16sp" android:textColor="@color/main_tab_txt_color" android:id="@+id/a8v" android:background="?android:attr/selectableItemBackground" android:paddingLeft="18dp" android:paddingTop="10dp" android:paddingRight="18dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_confirm"/>
+    </LinearLayout>
+</LinearLayout>

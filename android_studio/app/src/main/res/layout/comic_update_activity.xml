@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/comic_update_actionbar" layout="@layout/include_header_layout"/>
+    <com.shizhefei.view.indicator.ScrollIndicatorView android:id="@+id/comic_update_indicator" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="45dp"/>
+    <View android:layout_margin="2dp" style="@style/sc"/>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/comic_update_viewPager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

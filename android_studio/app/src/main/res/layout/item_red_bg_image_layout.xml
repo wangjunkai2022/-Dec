@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10dp" android:paddingEnd="10dp">
+    <androidx.cardview.widget.CardView android:id="@+id/item_my_news_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="5dp" app:cardPreventCornerOverlap="true" app:cardUseCompatPadding="true" app:elevation="24dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="80dp">
+                <ImageView android:id="@+id/item_image_iv" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+                <ImageView android:layout_gravity="center" android:id="@+id/item_bg_chose_color_view" android:visibility="gone" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/choose_red_icon"/>
+            </FrameLayout>
+            <TextView android:textSize="14sp" android:textColor="@color/color_333333" android:id="@+id/item_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView android:textSize="14sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@+id/item_use_tv" android:background="@drawable/selector_register_bg" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/comic_rank_actionbar" layout="@layout/include_header_layout"/>
+    <com.shizhefei.view.indicator.ScrollIndicatorView android:id="@+id/fragment_city_sex_indicator" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_margin="5dp"/>
+    <com.chanven.lib.cptr.PtrClassicFrameLayout android:id="@+id/refresh_rv_layout" android:layout_width="match_parent" android:layout_height="match_parent" cube_ptr:hz="100" cube_ptr:i0="1000" cube_ptr:i2="true" cube_ptr:i3="false" cube_ptr:i4="1" cube_ptr:i5="3.5">
+        <com.manhua.ui.widget.PageRecyclerView android:id="@+id/comic_rank_recyclerview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.chanven.lib.cptr.PtrClassicFrameLayout>
+</LinearLayout>

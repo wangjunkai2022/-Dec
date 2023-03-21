@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/activity_security_center_actionbar" layout="@layout/include_header_layout"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/color_F8F8F8" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:gravity="center" android:id="@+id/my_account_remove_account_layout" android:layout_marginTop="8dp" android:text="@string/remove_account_title_txt" style="@style/ff"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/fragment_rank_category_recyclerview" android:layout_width="70dp" android:layout_height="wrap_content"/>
+    <FrameLayout android:background="@color/search_edittext_bg_color" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@+id/fragment_rank_category_recyclerview">
+        <com.chanven.lib.cptr.PtrClassicFrameLayout android:id="@+id/refresh_rv_layout" android:layout_width="match_parent" android:layout_height="match_parent" cube_ptr:hz="100" cube_ptr:i0="1000" cube_ptr:i2="true" cube_ptr:i3="false" cube_ptr:i4="1" cube_ptr:i5="3.5">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </com.chanven.lib.cptr.PtrClassicFrameLayout>
+    </FrameLayout>
+</RelativeLayout>

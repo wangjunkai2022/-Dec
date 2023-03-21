@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/small_sj_icon" android:id="@+id/book_detail_to_book_shelf" android:visible="false" app:showAsAction="always"/>
+    <item android:icon="@drawable/search" android:id="@+id/activity_public_toolbar_search" android:title="@string/main_search_title" app:showAsAction="always"/>
+</menu>

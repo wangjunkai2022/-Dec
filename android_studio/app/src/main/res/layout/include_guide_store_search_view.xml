@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/view_parent_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.biquge.ebook.app.widget.StatusBarView android:id="@+id/popup_guide_status_iv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ImageView android:id="@+id/popup_guide_search_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/guide_store_shoushi" android:layout_below="@+id/popup_guide_status_iv" android:layout_centerHorizontal="true"/>
+    <ImageView android:id="@+id/popup_guide_model_iv" android:visibility="gone" android:layout_width="200dp" android:layout_height="wrap_content" android:src="@drawable/guide_store_model_cratton" android:layout_below="@+id/popup_guide_status_iv"/>
+</RelativeLayout>

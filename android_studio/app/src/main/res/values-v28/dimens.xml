@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cf">0.24</dimen>
+    <dimen name="cg">0.4</dimen>
+    <dimen name="ch">0.4</dimen>
+    <dimen name="ci">0.24</dimen>
+    <dimen name="ck">0.12</dimen>
+    <dimen name="cl">0.2</dimen>
+    <dimen name="cm">0.2</dimen>
+    <dimen name="cn">0.12</dimen>
+</resources>

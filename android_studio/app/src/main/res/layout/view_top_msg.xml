@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10dp" android:paddingEnd="8dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_tips_white" android:layout_marginEnd="5dp"/>
+        <FrameLayout android:paddingBottom="1dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.biquge.ebook.app.widget.marqueeview.ShelfMarqueeView android:id="@+id/home_public_tips_mv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <View android:layout_gravity="right" android:id="@+id/home_public_tips_redtag" android:background="@color/colorPrimaryDark" android:visibility="gone" android:layout_width="15dp" android:layout_height="30dp"/>
+        </FrameLayout>
+        <ImageView android:id="@+id/home_public_tips_close" android:padding="6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/white_close"/>
+    </LinearLayout>
+</merge>

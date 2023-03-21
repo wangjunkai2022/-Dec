@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/item_sign_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="14sp" android:textColor="#ff666666" android:gravity="center" android:layout_gravity="center" android:id="@+id/item_sign_date_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="一"/>
+        <View android:id="@+id/item_sign_date_today_view" android:background="@android:color/holo_red_light" android:visibility="invisible" android:layout_width="18dp" android:layout_height="2.2dp" android:layout_marginTop="3dp"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@+id/item_sign_status_iv" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/user_sign_complete"/>
+</FrameLayout>

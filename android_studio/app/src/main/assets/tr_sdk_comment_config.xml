@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PopoEmoticons>
+
+    <Catalog Title="emoji">
+        <Emoticon File="tr_sdk_emoji_aa.png" Tag="[哭笑]" />
+        <Emoticon File="tr_sdk_emoji_ab.png" Tag="[笑]" />
+        <Emoticon File="tr_sdk_emoji_ac.png" Tag="[大小]" />
+        <Emoticon File="tr_sdk_emoji_ad.png" Tag="[汗]" />
+        <Emoticon File="tr_sdk_emoji_ae.png" Tag="[笑哭]" />
+        <Emoticon File="tr_sdk_emoji_af.png" Tag="[微笑]" />
+        <Emoticon File="tr_sdk_emoji_ag.png" Tag="[挤眉弄眼]" />
+        <Emoticon File="tr_sdk_emoji_ah.png" Tag="[飞吻]" />
+        <Emoticon File="tr_sdk_emoji_ai.png" Tag="[鬼脸]" />
+        <Emoticon File="tr_sdk_emoji_aj.png" Tag="[难过]" />
+        <Emoticon File="tr_sdk_emoji_ak.png" Tag="[卫生]" />
+        <Emoticon File="tr_sdk_emoji_al.png" Tag="[酷]" />
+        <Emoticon File="tr_sdk_emoji_am.png" Tag="[卖萌]" />
+        <Emoticon File="tr_sdk_emoji_an.png" Tag="[大哭]" />
+        <Emoticon File="tr_sdk_emoji_ar.png" Tag="[屎]" />
+        <Emoticon File="tr_sdk_emoji_ao.png" Tag="[发怒]" />
+        <Emoticon File="tr_sdk_emoji_ap.png" Tag="[惊吓]" />
+        <Emoticon File="tr_sdk_emoji_aq.png" Tag="[白眼]" />
+        <Emoticon File="tr_sdk_emoji_as.png" Tag="[拍手]" />
+        <Emoticon File="tr_sdk_emoji_at.png" Tag="[OK]" />
+        <Emoticon File="tr_sdk_emoji_au.png" Tag="[耶]" />
+        <Emoticon File="tr_sdk_emoji_av.png" Tag="[手势]" />
+        <Emoticon File="tr_sdk_emoji_aw.png" Tag="[点赞]" />
+        <Emoticon File="tr_sdk_emoji_ax.png" Tag="[鼓掌]" />
+        <Emoticon File="tr_sdk_emoji_del.png" Tag="[删除]" />
+    </Catalog>
+
+    <Catalog Title="face">
+        <Emoticon File="tr_sdk_face_ac.png" Tag="face_man_1" />
+        <Emoticon File="tr_sdk_face_ad.png" Tag="face_man_2" />
+        <Emoticon File="tr_sdk_face_ae.png" Tag="face_man_3" />
+        <Emoticon File="tr_sdk_face_ag.png" Tag="face_man_4" />
+        <Emoticon File="tr_sdk_face_ai.png" Tag="face_man_5" />
+        <Emoticon File="tr_sdk_face_aj.png" Tag="face_man_6" />
+        <Emoticon File="tr_sdk_face_aa.png" Tag="face_lady_1" />
+        <Emoticon File="tr_sdk_face_ab.png" Tag="face_lady_2" />
+        <Emoticon File="tr_sdk_face_af.png" Tag="face_lady_3" />
+        <Emoticon File="tr_sdk_face_ah.png" Tag="face_lady_4" />
+    </Catalog>
+
+</PopoEmoticons>
+
+
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#ff302b27" android:fitsSystemWindows="true" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/read_end_back" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="50dp" android:layout_height="wrap_content" android:src="@drawable/yd_before" android:scaleType="center"/>
+        <TextView android:textSize="16sp" android:textColor="#ff999999" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginRight="50dp" android:text="@string/book_read_finish_title_txt"/>
+        <ImageView android:layout_gravity="end" android:id="@+id/read_end_search" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="50dp" android:layout_height="wrap_content" android:src="@drawable/search" android:scaleType="center"/>
+    </FrameLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.google.android.material.appbar.AppBarLayout android:background="@color/color_transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="0x1">
+                <com.biquge.ebook.app.ad.ads.AdViewRectangle android:id="@+id/adview_rectangle" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/booklist_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <View android:background="#ff26252a" style="@style/sc"/>
+                    <TextView android:textSize="15sp" android:textColor="#ff999999" android:id="@+id/item_book_city_blist_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:singleLine="true" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+                    <ImageView android:id="@+id/item_book_city_blist_image" android:layout_width="match_parent" android:layout_height="170dp" android:layout_marginTop="5dp" android:scaleType="centerCrop" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+                    <TextView android:textSize="13sp" android:textColor="#ff999999" android:id="@+id/item_book_city_blist_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:singleLine="true" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+                </LinearLayout>
+                <RelativeLayout android:background="#ff26252a" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="3dp">
+                    <TextView android:textSize="13sp" android:textColor="#ff999999" android:paddingLeft="10dp" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_read_recomment_title_txt" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="13sp" android:textColor="#ff999999" android:id="@+id/read_end_recomment" android:paddingLeft="10dp" android:paddingTop="2dp" android:paddingRight="10dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tips_more_txt" android:drawableRight="@drawable/sc_more" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/bookreadend_recyclerview" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.biquge.ebook.app.widget.fancybuttons.FancyButton android:id="@+id/book_readend_to_bookshelf_bt" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="30dp" android:layout_weight="1" app:ci="#ff938278" app:cm="#fff8f8f8" app:cy="5dp" app:d3="@string/book_my_bookshelf_txt" app:d5="#ffffffff" app:d9="13sp"/>
+        <com.biquge.ebook.app.widget.fancybuttons.FancyButton android:id="@+id/book_readend_to_bookcity_bt" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="20dp" android:layout_weight="1" app:ci="#ff938278" app:cm="#fff8f8f8" app:cy="5dp" app:d3="@string/book_city_see_txt" app:d5="#ffffffff" app:d9="13sp"/>
+    </LinearLayout>
+</LinearLayout>

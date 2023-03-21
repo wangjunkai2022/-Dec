@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/main_bg_color" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height">
+        <ImageView android:id="@+id/novel_dirs_back_image" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/brown_before"/>
+        <TextView android:textSize="16sp" android:textColor="#ff3f3f3f" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/novel_dirs_title_txt" android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="1"/>
+        <ImageView android:id="@+id/novel_dirs_actionbar_collection" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/reader_category"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="300dp" android:layout_height="match_parent">
+        <com.biquge.ebook.app.widget.pinnedheaderlistview.SectionPinListView android:id="@+id/comic_novel_dirs_recyclerview" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0dp" android:fastScrollEnabled="true" android:fastScrollAlwaysVisible="true"/>
+        <RelativeLayout android:layout_gravity="bottom|right" android:id="@+id/dirs_location" android:background="@drawable/shape_bg_location" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="20dp" android:layout_marginBottom="60dp">
+            <ImageView android:id="@+id/iv_location" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginTop="5dp" android:src="@drawable/btn_location" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="8sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/comic_location_txt" android:layout_below="@+id/iv_location" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <include android:id="@+id/dirs_loading_layout" layout="@layout/code_status_loading_view"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/main_bg_color" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15dp" android:paddingEnd="15dp">
+            <TextView android:textSize="13sp" android:textColor="@color/color_666666" android:id="@+id/activity_book_detail_status_txt" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <View android:id="@+id/activity_book_detail_update_portrait" android:background="@color/color_333333" android:visibility="gone" android:layout_width="1dp" android:layout_height="10dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp" style="@style/sf"/>
+            <TextView android:textSize="13sp" android:textColor="@color/color_666666" android:id="@+id/activity_book_detail_update_txt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:paddingStart="15dp" android:paddingEnd="15dp">
+            <TextView android:textSize="13sp" android:textColor="@color/color_666666" android:layout_gravity="bottom" android:id="@+id/activity_book_detail_category_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+            <View android:background="@color/color_333333" android:layout_width="1dp" android:layout_height="10dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp" style="@style/sf"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/activity_book_detail_starbar_layout" android:background="@drawable/shape_tag_bg" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10dp" android:paddingEnd="10dp">
+                <TextView android:textSize="13sp" android:textColor="@color/color_666666" android:id="@+id/activity_book_detail_starbar_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+                <com.biquge.ebook.app.widget.StarBarView android:enabled="false" android:id="@+id/activity_book_detail_starbar" android:layout_width="wrap_content" android:layout_height="22dp" android:layout_marginStart="10dp" app:jy="5" app:jz="2.5dp" app:k0="@drawable/s_star_none" app:k1="@drawable/s_star_all" app:k2="11dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:paddingStart="15dp" android:paddingEnd="15dp">
+            <TextView android:textSize="13sp" android:textColor="@color/color_666666" android:id="@+id/activity_book_detail_newchapter_title_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="12sp" android:textColor="@color/color_999999" android:layout_gravity="bottom" android:id="@+id/activity_book_detail_newchapter_time_txt" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" android:layout_marginStart="5dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:paddingStart="15dp" android:paddingEnd="15dp">
+            <TextView android:textSize="14sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_detail_works_intro_txt" android:singleLine="true"/>
+            <com.biquge.ebook.app.widget.ExpandableTextView android:id="@+id/book_detail_intro_text" android:layout_width="match_parent" android:layout_height="wrap_content" app:h1="3">
+                <TextView android:textSize="13sp" android:textColor="@color/color_999999" android:id="@+id/expandable_text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <ImageButton android:layout_gravity="bottom|right" android:id="@+id/expand_collapse" android:background="@color/main_bg_color" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </com.biquge.ebook.app.widget.ExpandableTextView>
+        </LinearLayout>
+        <com.biquge.ebook.app.ad.ads.AdViewRectangle android:id="@+id/adview_rectangle" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.biquge.ebook.app.ui.view.TopCommentLayout android:id="@+id/app_top_commentview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/book_detail_author_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="5dp" android:paddingEnd="5dp">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.manhua.ui.widget.TitleFontTextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/color_333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="10dp" android:text="@string/detail_author_book_txt" android:layout_marginStart="10dp"/>
+                <TextView android:textSize="12sp" android:textColor="@color/color_666666" android:gravity="center_vertical" android:layout_gravity="end|center_vertical" android:id="@+id/book_detail_recomment_refresh" android:background="@drawable/simple_bg_selector" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="15dp" android:paddingBottom="5dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_detail_exchange_txt" android:drawablePadding="2dp" android:drawableEnd="@drawable/change"/>
+            </FrameLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/book_detail_author_recyclerView" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/book_detail_same_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="5dp" android:paddingEnd="5dp">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.manhua.ui.widget.TitleFontTextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/color_666666" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="13dp" android:text="@string/detail_recomment_book_txt" android:layout_marginStart="10dp"/>
+                <TextView android:textSize="12sp" android:textColor="@color/color_666666" android:gravity="center_vertical" android:layout_gravity="end|center_vertical" android:id="@+id/book_detail_other_refresh" android:background="@drawable/simple_bg_selector" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="15dp" android:paddingBottom="5dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_detail_exchange_txt" android:drawablePadding="2dp" android:drawableEnd="@drawable/change"/>
+            </FrameLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/book_detail_recommend_recyclerView" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

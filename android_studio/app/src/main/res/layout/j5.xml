@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/a7i" android:paddingLeft="12dp" android:paddingRight="12dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="40dp" android:src="@drawable/je" android:scaleType="center"/>
+        <com.tr.comment.sdk.commons.widget.view.TrInputLayout android:gravity="bottom" android:orientation="horizontal" android:background="@drawable/d3" android:paddingLeft="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.tr.comment.sdk.commons.widget.view.TrDayNightEditText android:textSize="15sp" android:textColor="@color/tr_sdk_comment_333333" android:gravity="center_vertical" android:id="@+id/a7c" android:background="@null" android:paddingTop="5dp" android:paddingBottom="5dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="40dp" android:hint="@string/u8" android:maxLines="5" android:layout_weight="1"/>
+            <ImageView android:id="@+id/a7b" android:paddingLeft="12dp" android:paddingRight="12dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="40dp" android:src="@drawable/jd" android:scaleType="center"/>
+        </com.tr.comment.sdk.commons.widget.view.TrInputLayout>
+        <ImageView android:id="@+id/a87" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="40dp" android:src="@drawable/d5" android:scaleType="center"/>
+    </LinearLayout>
+    <com.tr.comment.sdk.commons.widget.TrEmojiLayout android:id="@+id/a7g" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.tr.comment.sdk.commons.widget.TrUserFaceLayout android:id="@+id/a7h" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

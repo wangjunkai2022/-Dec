@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chanven.lib.cptr.PtrClassicFrameLayout android:id="@+id/refresh_rv_layout" android:layout_width="match_parent" android:layout_height="match_parent" cube_ptr:hz="100" cube_ptr:i0="1000" cube_ptr:i2="true" cube_ptr:i3="false" cube_ptr:i4="1" cube_ptr:i5="3.5">
+        <com.manhua.ui.widget.PageRecyclerView android:id="@+id/comic_rank_recyclerview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.chanven.lib.cptr.PtrClassicFrameLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/main_tab_txt_color" android:gravity="center" android:id="@+id/comic_rank_header_txt" android:background="@color/color_F8F8F8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp"/>
+    <com.manhua.ui.widget.PublicLoadingView android:id="@+id/activity_loading_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

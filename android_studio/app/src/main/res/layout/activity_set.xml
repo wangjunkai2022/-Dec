@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/color_F8F8F8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/set_actionbar" layout="@layout/include_header_layout"/>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/set_actionbar">
+        <LinearLayout android:orientation="vertical" android:paddingTop="5dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="5dp" android:paddingEnd="5dp">
+            <FrameLayout android:id="@+id/set_checknew_layout" android:background="@drawable/simple_item_bg_selector" android:paddingLeft="10dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="@dimen/info_item_txt_size" android:textColor="@color/color_333333" android:gravity="center_vertical" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_examine_update_txt" android:drawableLeft="@drawable/lm_check_version" android:drawablePadding="10dp"/>
+                <TextView android:textSize="14sp" android:textColor="@color/color_666666" android:layout_gravity="center" android:id="@+id/set_soft_version_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="V89" android:drawableRight="@drawable/sjxq_right_arrow" android:drawablePadding="10dp"/>
+            </FrameLayout>
+            <TextView android:id="@+id/function_navigation_feedback" android:layout_marginTop="8dp" android:text="@string/main_feedback_txt" android:drawableLeft="@drawable/lm_feedback" android:drawableRight="@drawable/sjxq_right_arrow" style="@style/ff"/>
+            <View style="@style/se"/>
+            <TextView android:id="@+id/set_disclaimer_layout" android:text="@string/set_disclaimer_txt" android:drawableLeft="@drawable/lm_mzsm" android:drawableRight="@drawable/sjxq_right_arrow" style="@style/ff"/>
+            <View style="@style/se"/>
+            <TextView android:id="@+id/set_about_layout" android:paddingLeft="13dp" android:text="@string/set_about_txt" android:drawableLeft="@drawable/lm_gywm" android:drawableRight="@drawable/sjxq_right_arrow" style="@style/ff"/>
+            <RelativeLayout android:id="@+id/activity_dark_theme_mode_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                <TextView android:paddingLeft="13dp" android:text="@string/set_dark_theme_mode_txt" android:drawableLeft="@drawable/im_flow_system_dark" android:drawableRight="@drawable/sjxq_right_arrow" style="@style/ff"/>
+                <com.biquge.ebook.app.widget.SwitchButton android:id="@+id/cb_dark_theme_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:ir="@color/colorAccent"/>
+            </RelativeLayout>
+            <View style="@style/se"/>
+            <TextView android:id="@+id/set_menu_skin_layout" android:text="@string/skin_title_txt" android:drawableLeft="@drawable/lm_skin" android:drawableRight="@drawable/sjxq_right_arrow" style="@style/ff"/>
+            <View style="@style/se"/>
+            <TextView android:id="@+id/function_navigation_mode" android:text="@string/app_model_night_txt" android:drawableLeft="@drawable/lm_night" android:drawableRight="@drawable/sjxq_right_arrow" style="@style/ff"/>
+            <FrameLayout android:id="@+id/clear_disk_cache_layout" android:background="@drawable/simple_item_bg_selector" android:paddingLeft="10dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="8dp">
+                <TextView android:textSize="@dimen/info_item_txt_size" android:textColor="@color/color_333333" android:gravity="center_vertical" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_clear_cache_txt" android:drawableLeft="@drawable/lm_clear_cache" android:drawablePadding="10dp"/>
+                <TextView android:textSize="14sp" android:textColor="@color/color_666666" android:layout_gravity="center" android:id="@+id/set_disk_cache_size_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0K" android:drawableRight="@drawable/sjxq_right_arrow" android:drawablePadding="10dp"/>
+            </FrameLayout>
+            <View style="@style/se"/>
+            <FrameLayout android:id="@+id/clear_disk_comic_cache_layout" android:background="@drawable/simple_item_bg_selector" android:paddingLeft="12dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="@dimen/info_item_txt_size" android:textColor="@color/color_333333" android:gravity="center_vertical" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_clear_comic_cache_txt" android:drawableLeft="@drawable/lm_clear_comic_cache" android:drawablePadding="15dp"/>
+                <TextView android:textSize="14sp" android:textColor="@color/color_666666" android:layout_gravity="center" android:id="@+id/set_disk_comic_cache_size_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0K" android:drawableRight="@drawable/sjxq_right_arrow" android:drawablePadding="10dp"/>
+            </FrameLayout>
+            <TextView android:id="@+id/clear_other_cache_layout" android:layout_marginTop="8dp" android:text="@string/set_clear_other_cache_txt" android:drawableLeft="@drawable/lm_clear_other_cache" android:drawableRight="@drawable/sjxq_right_arrow" style="@style/ff"/>
+            <TextView android:id="@+id/set_clear_app_cache" android:visibility="gone" android:layout_marginTop="8dp" android:text="跳转清除app缓存，-测试包才会出现" android:drawableRight="@drawable/sjxq_right_arrow" style="@style/ff"/>
+            <TextView android:id="@+id/set_test" android:visibility="gone" android:layout_marginTop="8dp" android:text="测试页面，-测试包才会出现" android:drawableRight="@drawable/sjxq_right_arrow" style="@style/ff"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <ViewStub android:id="@+id/rl_switch_night" android:visibility="gone" android:layout="@layout/include_switch_nightday_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

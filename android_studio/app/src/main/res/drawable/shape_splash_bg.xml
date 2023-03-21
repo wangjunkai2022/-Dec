@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/splash_bg" android:drawable="@android:color/white"/>
+    <item android:gravity="bottom|center_horizontal" android:id="@+id/splash_center" android:bottom="10dp">
+        <bitmap android:src="@drawable/welcome_logo"/>
+    </item>
+</layer-list>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/store_top_rank_layout" android:background="@drawable/shape_popup_white_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp">
+    <com.shizhefei.view.indicator.ScrollIndicatorView android:id="@+id/store_top_indicator" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="45dp"/>
+    <View android:id="@+id/store_top_indicator_line" style="@style/sc"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/store_list_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/store_style_left_layout" android:visibility="gone" android:layout_width="41dp" android:layout_height="match_parent" android:layout_marginTop="6dp">
+            <TextView android:textColor="@drawable/selector_store_left_tab_txt" android:gravity="center" android:id="@+id/store_style_left_one" android:background="@drawable/selector_store_left_tab_bg" android:layout_width="match_parent" android:layout_height="82dp"/>
+            <TextView android:textColor="@drawable/selector_store_left_tab_txt" android:gravity="center" android:id="@+id/store_style_left_two" android:background="@drawable/selector_store_left_tab_bg" android:layout_width="match_parent" android:layout_height="82dp" android:layout_marginTop="2dp"/>
+            <TextView android:textColor="@drawable/selector_store_left_tab_txt" android:gravity="center" android:id="@+id/store_style_left_three" android:background="@drawable/selector_store_left_tab_bg" android:layout_width="match_parent" android:layout_height="82dp" android:layout_marginTop="2dp"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/store_top_rv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView android:textSize="15sp" android:textColor="@color/main_tab_txt_color" android:gravity="center" android:id="@+id/store_top_see_total_rank" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="5dp" android:layout_marginBottom="7dp" android:text="@string/see_total_rank_txt" android:layout_marginStart="5dp" android:layout_marginEnd="5dp"/>
+</LinearLayout>

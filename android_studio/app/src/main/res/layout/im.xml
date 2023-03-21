@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/a76" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ViewStub android:id="@+id/a74" android:layout="@layout/iq" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ViewStub android:id="@+id/a75" android:layout="@layout/ir" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ImageView android:layout_gravity="bottom|right" android:id="@+id/a6p" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/jc" android:scaleType="center"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/a78" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/a6x" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.tr.comment.sdk.commons.widget.TrReplyLayout android:id="@+id/a6v" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.tr.comment.sdk.commons.widget.TrStateView android:id="@+id/a6y" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="50dp"/>
+    </FrameLayout>
+    <com.tr.comment.sdk.commons.widget.TrLineView android:layout_width="match_parent" android:layout_height="0.8dp"/>
+    <ViewStub android:id="@+id/a6s" android:layout="@layout/j5" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ViewStub android:id="@+id/a6u" android:layout="@layout/ix" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="20sp" android:textColor="@color/_xpopup_title_color" android:ellipsize="end" android:id="@+id/a97" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="22dp" android:lines="1"/>
+    <TextView android:textSize="15sp" android:textColor="@color/_xpopup_content_color" android:id="@+id/a8w" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+    <EditText android:textSize="15sp" android:textColor="@color/_xpopup_content_color" android:textColorHint="#ff999999" android:id="@+id/ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+        <TextView android:textSize="16sp" android:textColor="@color/_xpopup_cancel_color" android:id="@+id/a8t" android:background="?android:attr/selectableItemBackground" android:paddingLeft="18dp" android:paddingTop="10dp" android:paddingRight="18dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:text="@android:string/cancel"/>
+        <TextView android:textSize="16sp" android:id="@+id/a8v" android:background="?android:attr/selectableItemBackground" android:paddingLeft="18dp" android:paddingTop="10dp" android:paddingRight="18dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@android:string/ok"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/activity_create_download_txt_actionbar" layout="@layout/include_header_layout"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/main_bg_color" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatEditText android:textSize="14sp" android:textColor="@color/color_666666" android:textColorHint="@color/color_999999" android:gravity="center_vertical" android:id="@+id/create_download_title_txt" android:background="@drawable/selector_read_menu_bt" android:padding="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/create_txt_download_file_title_txt" android:singleLine="true"/>
+        <androidx.appcompat.widget.AppCompatEditText android:textSize="14sp" android:textColor="@color/color_666666" android:textColorHint="@color/color_999999" android:gravity="top|left" android:id="@+id/create_download_url_txt" android:background="@drawable/selector_read_menu_bt" android:padding="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:hint="@string/create_txt_download_file_url_txt" android:maxLines="7" android:minLines="7"/>
+        <TextView android:textSize="14sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@+id/create_download_file_bt" android:background="@drawable/selector_register_bg" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginTop="20dp" android:text="@string/download_txt"/>
+    </LinearLayout>
+</LinearLayout>

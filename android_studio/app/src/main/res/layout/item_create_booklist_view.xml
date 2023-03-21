@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/item_simple_book_image" android:layout_width="65dp" android:layout_height="84dp" android:scaleType="centerCrop"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/item_simple_book_name_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textColor="@color/color_333333" android:id="@+id/item_simple_book_name_txt" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:singleLine="true" android:layout_weight="1"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/color_F7B11B" android:id="@+id/item_simple_book_score_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:singleLine="true"/>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                    <TextView android:textSize="12sp" android:textColor="@color/color_666666" android:id="@+id/item_simple_book_type_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true"/>
+                    <ImageView android:id="@+id/item_book_shelf_edit_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <TextView android:textSize="12sp" android:textColor="@color/color_999999" android:ellipsize="end" android:id="@+id/item_simple_book_simple_info_txt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:maxLines="2"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/item_delete_bt" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_remove" android:layout_alignTop="@+id/item_simple_book_name_layout" android:layout_alignRight="@+id/item_simple_book_name_layout"/>
+            <com.biquge.ebook.app.widget.labelview.LabelView android:layout_gravity="bottom|right" android:id="@+id/item_cover_image" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:layout_alignRight="@+id/item_simple_book_name_layout" android:layout_alignBottom="@+id/item_simple_book_name_layout" lv:g6="@color/main_tab_txt_color" lv:g8="85" lv:ga="@string/element_detail_cover_txt" lv:ge="8sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="35dp" android:layout_margin="10dp">
+        <EditText android:textSize="12sp" android:textColor="@color/color_000000" android:textColorHint="@color/color_666666" android:id="@+id/item_create_element_intro_txt" android:background="@drawable/shape_search_gray_bg" android:paddingLeft="10dp" android:paddingRight="40dp" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/create_element_recomment_reason_txt" android:singleLine="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/item_create_cancel_input_image" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ss_cancel" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View style="@style/sc"/>
+</LinearLayout>

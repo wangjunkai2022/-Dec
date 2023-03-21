@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.biquge.ebook.app.widget.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:id="@+id/item_my_news_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp" app:cardCornerRadius="5dp" app:cardPreventCornerOverlap="true" app:cardUseCompatPadding="true" app:elevation="24dp">
+        <LinearLayout android:orientation="vertical" android:background="@color/search_edittext_bg_color" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginEnd="-15dp">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@+id/item_my_news_title_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:singleLine="true"/>
+                <ImageView android:layout_gravity="right" android:id="@+id/item_my_news_new_tag_image" android:layout_width="10dp" android:layout_height="10dp" android:src="@drawable/shape_bg_red_circle"/>
+            </FrameLayout>
+            <ImageView android:id="@+id/item_my_news_pic_iv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="130dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:scaleType="centerCrop"/>
+            <TextView android:textSize="13.5sp" android:textColor="@color/color_777777" android:ellipsize="end" android:id="@+id/item_my_news_describe_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:maxLines="2"/>
+            <View android:layout_marginTop="10dp" android:layout_marginBottom="10dp" style="@style/sc"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="11sp" android:textColor="@color/color_999999" android:id="@+id/item_my_news_time_txt" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:enabled="false" android:textSize="10sp" android:textColor="@color/color_999999" android:id="@+id/item_my_news_author_txt" android:background="@drawable/shape_reply_btn_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_my_news_author_txt" android:layout_marginStart="10dp"/>
+                <TextView android:textSize="14sp" android:textColor="@color/color_wathet" android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ad_look_detail_txt" android:drawableRight="@drawable/sjxq_right_arrow" android:drawablePadding="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="80dp" android:layout_height="match_parent" android:layout_marginStart="10dp">
+        <TextView android:textSize="14sp" android:textColor="@color/color_666666" android:gravity="center" android:id="@+id/item_my_news_delete_view" android:background="@drawable/shape_dialog_tips_bg" android:layout_width="80dp" android:layout_height="80dp" android:text="@string/main_delete"/>
+    </LinearLayout>
+</com.biquge.ebook.app.widget.SwipeItemLayout>

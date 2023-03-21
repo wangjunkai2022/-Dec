@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.biquge.ebook.app.widget.ScrollHeaderLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/header_rank_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.shizhefei.view.indicator.ScrollIndicatorView android:id="@+id/header_ranking_channel_indicator" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="40dp"/>
+    <LinearLayout android:orientation="horizontal" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="40dp">
+        <com.shizhefei.view.indicator.ScrollIndicatorView android:layout_gravity="center_vertical" android:id="@+id/header_ranking_rank_indicator" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <View android:layout_width="0.5dp" android:layout_height="15dp" android:layout_marginLeft="5dp" style="@style/sf"/>
+            <ImageView android:id="@+id/header_ranking_edit_menu" android:layout_width="33dp" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/icon_category_edit" android:scaleType="center"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.shizhefei.view.indicator.ScrollIndicatorView android:id="@+id/header_ranking_category_indicator" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="40dp"/>
+</com.biquge.ebook.app.widget.ScrollHeaderLayout>

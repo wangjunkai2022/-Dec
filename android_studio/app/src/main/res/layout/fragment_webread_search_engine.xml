@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/web_search_top_appbarlayout" android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="wrap_content" app:expanded="false" app:layout_behavior="com.biquge.ebook.app.widget.browse.nested.NestedWebHeardBehavior">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="0x1">
+            <TextView android:textSize="11sp" android:textColor="@color/color_999999" android:ellipsize="end" android:id="@+id/web_search_platfrom_title_tv" android:background="#08000000" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.biquge.ebook.app.widget.browse.ProgressBarWebView android:id="@+id/activity_website_webview" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" app:layout_behavior="@string/appbar_scrolling_view_behavior" style="@style/fq"/>
+    <com.biquge.ebook.app.widget.browse.IndeterminateProgressBar android:id="@+id/web_search_site_indeterminate_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/fq"/>
+    <com.biquge.ebook.app.ui.webread.view.WebLoadingView android:id="@+id/web_loading_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:id="@+id/activity_website_bgview" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

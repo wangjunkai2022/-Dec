@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/main_bg_color" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.biquge.ebook.app.widget.StatusBarView android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.biquge.ebook.app.widget.browse.ProgressBarWebView android:id="@+id/web_content_webview" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/fq"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/web_site_transcoding_layout" android:background="@drawable/shape_search_white_bg" android:paddingTop="15dp" android:paddingBottom="15dp" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10dp" android:paddingEnd="10dp">
+            <TextView android:textSize="14sp" android:textColor="@color/color_333333" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/transcoding_open_tips_txt" android:lines="1" android:layout_weight="1"/>
+            <TextView android:textSize="14sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@+id/transcoding_read_btn" android:background="@drawable/selector_red_semicircle_bg" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transcoding_open_txt" android:lines="1" android:paddingStart="20dp" android:paddingEnd="20dp"/>
+        </LinearLayout>
+        <com.biquge.ebook.app.ui.webread.view.WebBookDetailView android:id="@+id/web_book_detail_view" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <View style="@style/sc"/>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="40dp">
+        <ImageView android:id="@+id/website_webview_back_view" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/icon_webview_allow_back" android:scaleType="center" android:layout_weight="1"/>
+        <ImageView android:id="@+id/website_webview_forward_view" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/selector_webview_forward" android:scaleType="center" android:layout_weight="1"/>
+        <ImageView android:id="@+id/website_webview_refresh_view" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/icon_webview_reload" android:scaleType="center" android:layout_weight="1"/>
+        <ImageView android:id="@+id/website_webview_menu_view" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/web_menu_icon" android:scaleType="center" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

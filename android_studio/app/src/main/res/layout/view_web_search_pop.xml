@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/web_search_finger_layout" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:layout_width="0dp" android:layout_height="10dp" android:layout_weight="1"/>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:background="@drawable/shape_search_white_bg" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_result_bottom_pop_tips_txt"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/web_search_finger_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="55dp" android:src="@drawable/web_search_pop_position"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.biquge.ebook.app.widget.HeaderView android:id="@+id/register_actionbar" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.biquge.ebook.app.widget.TopSemicircleView android:layout_width="match_parent" android:layout_height="170dp"/>
+        <TextView android:textSize="14sp" android:textColor="@color/color_ffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/login_top_desc_txt" android:drawableTop="@drawable/icon_vcode_logo"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="30dp" android:paddingTop="20dp" android:paddingRight="30dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/shape_login_input_bg" android:layout_width="match_parent" android:layout_height="@dimen/input_et_height">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_phone" android:layout_marginStart="12dp"/>
+            <View android:layout_width="1dp" android:layout_height="25dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp" style="@style/sf"/>
+            <TextView android:textSize="14sp" android:textColor="@color/color_333333" android:layout_gravity="center_vertical" android:id="@+id/login_countriescode_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/china_phone_code" android:layout_marginStart="5dp" android:layout_marginEnd="5dp"/>
+            <View android:layout_width="1dp" android:layout_height="25dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp" style="@style/sf"/>
+            <com.biquge.ebook.app.widget.ClearEditText android:textSize="14sp" android:textColor="@color/color_333333" android:textColorHint="@color/color_999999" android:gravity="center_vertical" android:id="@+id/register_account_et" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/please_input_phone_number" android:singleLine="true" android:digits=" 1234567890" android:inputType="phone" android:paddingEnd="6dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/shape_login_input_bg" android:layout_width="match_parent" android:layout_height="@dimen/input_et_height" android:layout_marginTop="15dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_msg_code" android:layout_marginStart="12dp"/>
+            <View android:layout_width="1dp" android:layout_height="25dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp" style="@style/sf"/>
+            <com.biquge.ebook.app.widget.ClearEditText android:textSize="14sp" android:textColor="@color/color_333333" android:textColorHint="@color/color_999999" android:gravity="center_vertical" android:id="@+id/register_vcode_et" android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:hint="@string/please_input_vcode" android:singleLine="true" android:layout_weight="1" android:inputType="number" android:paddingEnd="6dp"/>
+            <com.biquge.ebook.app.widget.MessageTimerView android:id="@+id/view_messageTimerTv" android:background="@drawable/selector_red_semicircle_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView android:textSize="14sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@+id/register_register_bt" android:background="@drawable/selector_red_semicircle_bg" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="30dp" android:text="@string/login_immediately_txt"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp">
+        <CheckBox android:id="@+id/privacy_agreement_cb" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/fc"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/activity_novel_dirs_layout" android:background="@color/main_bg_color" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/novel_dirs_top_layout" android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height">
+        <ImageView android:id="@+id/novel_dirs_back_image" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/brown_before"/>
+        <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/novel_dirs_title_txt" android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="1"/>
+        <ImageView android:id="@+id/novel_dirs_actionbar_collection" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/reader_category"/>
+    </LinearLayout>
+    <com.biquge.ebook.app.widget.pinnedheaderlistview.SectionPinListView android:id="@+id/comic_novel_dirs_recyclerview" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0dp" android:layout_below="@+id/novel_dirs_top_layout" android:fastScrollEnabled="true" android:fastScrollAlwaysVisible="true"/>
+    <com.manhua.ui.widget.PublicLoadingView android:id="@+id/public_loadingview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/novel_dirs_top_layout"/>
+</RelativeLayout>

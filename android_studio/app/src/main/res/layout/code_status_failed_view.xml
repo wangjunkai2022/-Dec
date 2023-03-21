@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="14sp" android:textColor="@color/color_000000" android:gravity="center" android:id="@+id/error_conf_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6dp" android:text="@string/tips_load_faild_txt"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/error_conf_msg_rv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginStart="6dp" android:layout_marginEnd="6dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/error_conf_msg_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textSize="13sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@+id/item_read_error_reload_bt" android:background="@drawable/selector_red_semicircle_bg" android:layout_width="180dp" android:layout_height="43dp" android:layout_marginTop="15dp" android:text="@string/tips_reload_txt"/>
+    <TextView android:textSize="13sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@+id/item_read_error_back_bt" android:background="@drawable/selector_gray_cancel_btn_bg" android:visibility="gone" android:layout_width="180dp" android:layout_height="43dp" android:layout_marginTop="25dp" android:text="@string/main_exit_txt"/>
+</LinearLayout>

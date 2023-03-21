@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.biquge.ebook.app.widget.HeaderView android:id="@+id/my_account_actionbar" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/color_F8F8F8" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/fragment_info_headicon_login_layout" android:background="@drawable/simple_item_bg_selector" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/info_item_txt_size" android:textColor="@color/color_333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/info_headicon_txt"/>
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sjxq_right_arrow"/>
+            <com.biquge.ebook.app.widget.CircleImageView android:layout_gravity="center" android:id="@+id/fragment_info_headicon_login" android:layout_width="65dp" android:layout_height="65dp" android:layout_marginRight="30dp" android:src="@drawable/man"/>
+        </FrameLayout>
+        <View style="@style/se"/>
+        <FrameLayout android:background="@drawable/simple_item_bg_selector" android:padding="10dp" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="@dimen/info_item_txt_size" android:textColor="@color/color_333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_username_txt"/>
+            <TextView android:textSize="14sp" android:textColor="@color/color_666666" android:gravity="center" android:id="@+id/fragment_info_loginname_login" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="80dp" android:layout_marginRight="10dp" android:singleLine="true" android:textIsSelectable="true"/>
+        </FrameLayout>
+        <View style="@style/se"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/fragment_info_nickname_login_layout" android:background="@drawable/simple_item_bg_selector" android:layout_width="match_parent" android:layout_height="50dp" android:paddingStart="10dp" android:paddingEnd="15dp">
+            <TextView android:textSize="@dimen/info_item_txt_size" android:textColor="@color/color_333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/info_nickname_txt"/>
+            <TextView android:textSize="14sp" android:textColor="@color/color_666666" android:gravity="right" android:id="@+id/fragment_info_nickname" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" android:layout_marginEnd="5dp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sjxq_right_arrow" android:layout_marginStart="5dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/my_account_band_email_layout" android:background="@drawable/simple_item_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+            <TextView android:id="@+id/my_account_phone_title_txt" android:background="@null" android:layout_width="wrap_content" android:text="@string/user_comple_email_txt" style="@style/ff"/>
+            <TextView android:textSize="14sp" android:textColor="@color/color_3498DB" android:gravity="center" android:id="@+id/my_account_phone_txt" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:singleLine="true" android:layout_weight="1"/>
+            <TextView android:textSize="14sp" android:textColor="@color/color_3498DB" android:id="@+id/my_account_comple_email_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="@string/user_comple_info_no_band_txt"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/sjxq_right_arrow"/>
+        </LinearLayout>
+        <View style="@style/se"/>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/my_account_reset_pwd_layout" android:background="@drawable/simple_item_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+            <TextView android:id="@+id/my_account_reset_pwd_title_txt" android:background="@null" android:layout_width="wrap_content" android:text="@string/user_set_password" style="@style/ff"/>
+            <TextView android:textSize="14sp" android:textColor="@color/color_3498DB" android:gravity="center" android:id="@+id/my_account_reset_pwd_btn" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="@string/user_comple_info_set_txt" android:layout_weight="1"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/sjxq_right_arrow"/>
+        </LinearLayout>
+        <View style="@style/se"/>
+        <FrameLayout android:id="@+id/fragment_info_email_layout" android:background="@drawable/simple_item_bg_selector" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="@dimen/info_item_txt_size" android:textColor="@color/color_333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/info_user_email_txt"/>
+            <TextView android:textSize="14sp" android:textColor="@color/color_666666" android:layout_gravity="center" android:id="@+id/fragment_info_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:singleLine="true"/>
+        </FrameLayout>
+        <View android:id="@+id/fragment_info_email_lineview" android:visibility="gone" style="@style/se"/>
+        <TextView android:id="@+id/my_account_security_center_layout" android:text="@string/set_security_center" android:drawableRight="@drawable/sjxq_right_arrow" style="@style/ff"/>
+        <TextView android:gravity="center" android:id="@+id/my_account_loginout_layout" android:layout_marginTop="8dp" android:text="@string/change_my_account_title_txt" style="@style/ff"/>
+    </LinearLayout>
+</LinearLayout>

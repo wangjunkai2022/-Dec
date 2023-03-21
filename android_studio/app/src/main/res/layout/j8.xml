@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:padding="2dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.tr.comment.sdk.commons.widget.view.TrDayNightSortTextView android:textSize="12sp" android:textColor="@color/color_333333" android:id="@+id/a88" android:background="@drawable/db" android:paddingLeft="8dp" android:paddingTop="3dp" android:paddingRight="8dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/un"/>
+    <com.tr.comment.sdk.commons.widget.view.TrDayNightSortTextView android:textSize="12sp" android:textColor="@color/color_333333" android:id="@+id/a89" android:background="@drawable/db" android:paddingLeft="8dp" android:paddingTop="3dp" android:paddingRight="8dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/uo"/>
+</LinearLayout>

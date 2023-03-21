@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/upload_book_actionbar" layout="@layout/include_header_layout"/>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="match_parent" android:layout_height="100dp" android:src="@drawable/want_book_top_icon"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/activity_my_wallet_marqueeview_layout" android:layout_width="match_parent" android:layout_height="35dp">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="10dp" android:src="@drawable/wb_icon"/>
+                <com.biquge.ebook.app.widget.marqueeview.MarqueeView android:id="@+id/want_book_marqueeview" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:h7="1000" app:h9="2000" app:ha="@color/color_333333" app:hb="13sp"/>
+            </LinearLayout>
+            <FrameLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/want_book_last_week_new_books"/>
+                <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center" android:layout_gravity="center" android:id="@+id/last_week_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-"/>
+                <TextView android:textSize="14sp" android:textColor="@color/color_666666" android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/want_book_last_week_new_books_txt"/>
+            </FrameLayout>
+            <View style="@style/sc"/>
+            <FrameLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/want_book_last_week_new_books_success"/>
+                <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center" android:layout_gravity="center" android:id="@+id/last_week_people" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-"/>
+                <TextView android:textSize="14sp" android:textColor="@color/color_666666" android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/want_book_last_week_new_books_success_txt"/>
+            </FrameLayout>
+            <View style="@style/sc"/>
+            <FrameLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/want_book_total_new_books_success"/>
+                <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center" android:layout_gravity="center" android:id="@+id/total_help_people" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-"/>
+                <TextView android:textSize="14sp" android:textColor="@color/color_666666" android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/want_book_last_week_new_books_success_txt"/>
+            </FrameLayout>
+            <com.shizhefei.view.indicator.ScrollIndicatorView android:layout_gravity="center_horizontal" android:id="@+id/upload_file_indicator" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginTop="10dp"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/shape_login_input_bg" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp">
+                <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="@string/want_book_name"/>
+                <androidx.appcompat.widget.AppCompatEditText android:textSize="14sp" android:textColor="@color/color_666666" android:textColorHint="@color/color_999999" android:gravity="center_vertical" android:id="@+id/want_book_name_txt" android:background="@null" android:padding="6dp" android:layout_width="0dp" android:layout_height="49dp" android:hint="@string/want_book_name_tips" android:singleLine="true" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/shape_login_input_bg" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp">
+                <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/want_book_writer" android:layout_marginStart="10dp"/>
+                <androidx.appcompat.widget.AppCompatEditText android:textSize="14sp" android:textColor="@color/color_666666" android:textColorHint="@color/color_999999" android:gravity="center_vertical" android:id="@+id/want_book_writer_txt" android:background="@null" android:padding="6dp" android:layout_width="match_parent" android:layout_height="49dp" android:hint="@string/want_book_writer_tips" android:singleLine="true"/>
+            </LinearLayout>
+            <TextView android:textSize="16sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@+id/want_book_file_bt" android:background="@drawable/selector_red_semicircle_bg" android:layout_width="match_parent" android:layout_height="45dp" android:layout_margin="20dp" android:text="@string/want_book_bt"/>
+            <TextView android:textSize="13sp" android:textColor="@color/color_666666" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:text="@string/want_book_txt_tips"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

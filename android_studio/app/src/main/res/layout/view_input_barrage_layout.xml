@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+            <ImageView android:id="@+id/stroke_color_white" android:layout_width="60dp" android:layout_height="match_parent" android:src="@drawable/stroke_color_rbtn_white" android:scaleType="center"/>
+            <ImageView android:id="@+id/stroke_color_pink" android:layout_width="60dp" android:layout_height="match_parent" android:src="@drawable/stroke_color_rbtn_pink" android:scaleType="center"/>
+            <ImageView android:id="@+id/stroke_color_green" android:layout_width="60dp" android:layout_height="match_parent" android:src="@drawable/stroke_color_rbtn_green" android:scaleType="center"/>
+            <ImageView android:id="@+id/stroke_color_red" android:layout_width="60dp" android:layout_height="match_parent" android:src="@drawable/stroke_color_rbtn_red" android:scaleType="center"/>
+            <ImageView android:id="@+id/stroke_color_orange" android:layout_width="60dp" android:layout_height="match_parent" android:src="@drawable/stroke_color_rbtn_orange" android:scaleType="center"/>
+            <ImageView android:id="@+id/stroke_color_blue" android:layout_width="60dp" android:layout_height="match_parent" android:src="@drawable/stroke_color_rbtn_blue" android:scaleType="center"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <View style="@style/sc"/>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/doodle_select_color_btn" android:padding="12dp" android:visibility="gone" android:layout_width="60dp" android:layout_height="match_parent" android:src="@drawable/draw_hm"/>
+        <EditText android:textSize="14dp" android:textColor="#ff666666" android:layout_gravity="bottom" android:id="@+id/doodle_selectable_edit" android:background="@null" android:padding="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:hint="@string/barrage_hint_tips" android:singleLine="true" android:maxLength="20" android:layout_weight="1"/>
+        <TextView android:textSize="16dp" android:textColor="#ff333333" android:gravity="center" android:id="@+id/doodle_text_enter_btn" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/barrage_send"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ao">0dp</dimen>
+    <dimen name="aq">22dp</dimen>
+    <dimen name="ar">48dp</dimen>
+    <dimen name="av">48dp</dimen>
+    <dimen name="aw">48dp</dimen>
+    <dimen name="b9">0dp</dimen>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.shizhefei.view.indicator.FixedIndicatorView android:id="@+id/activity_my_booklist_indicator" android:padding="10dp" android:layout_width="match_parent" android:layout_height="50dp"/>
+    <View style="@style/sc"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.viewpager.widget.ViewPager android:id="@+id/activity_my_booklist_viewPager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:layout_gravity="bottom|right" android:id="@+id/my_booklist_create_bt" android:background="@drawable/selector_create_bg" android:layout_width="42dp" android:layout_height="42dp" android:layout_marginRight="20dp" android:layout_marginBottom="90dp">
+            <View android:layout_gravity="center" android:background="#ffffffff" android:layout_width="25dp" android:layout_height="2dp"/>
+            <View android:layout_gravity="center" android:background="#ffffffff" android:layout_width="2dp" android:layout_height="25dp"/>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

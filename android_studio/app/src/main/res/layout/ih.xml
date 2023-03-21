@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qq.e.ads.nativ.widget.NativeAdContainer xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/xl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+    <LinearLayout android:orientation="vertical" android:id="@+id/gdt_native_ad_layout" android:background="#05000000" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="200dp">
+            <com.qq.e.ads.nativ.MediaView android:layout_gravity="center" android:id="@+id/gdt_media_view" android:background="#ff000000" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <ImageView android:id="@+id/gdt_poster_img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/xi" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textColor="#ff111111" android:id="@+id/xk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:singleLine="true"/>
+                <TextView android:textColor="#ff666666" android:ellipsize="end" android:id="@+id/xj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:singleLine="true"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/xh" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp">
+                    <ImageView android:id="@+id/pk" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="3dp" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_weight="1"/>
+                    <ImageView android:id="@+id/pl" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="3dp" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_weight="1"/>
+                    <ImageView android:id="@+id/pm" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="3dp" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:textSize="14sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@+id/a67" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:maxLines="2"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp">
+            <com.swl.gg.sdk.core.widget.TrNiceImageView android:id="@+id/gdt_native_img_logo" android:layout_width="30dp" android:layout_height="30dp" app:b9="6dp"/>
+            <TextView android:textSize="13sp" android:textColor="#ff666666" android:ellipsize="end" android:id="@+id/a6_" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" android:layout_marginStart="5dp" android:layout_marginEnd="10dp"/>
+            <TextView android:textSize="13sp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/gdt_native_btn_detail" android:background="@drawable/cv" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="60dp" android:text="@string/u3" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.qq.e.ads.nativ.widget.NativeAdContainer>

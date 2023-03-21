@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="100dp" android:layout_height="40dp">
+        <View android:id="@+id/item_skin_bgview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/item_skin_selectview" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/skin_select" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/color_333333" android:id="@+id/item_skin_titleview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+</LinearLayout>

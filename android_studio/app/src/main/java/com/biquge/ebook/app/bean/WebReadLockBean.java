@@ -1,0 +1,43 @@
+package com.biquge.ebook.app.bean;
+
+import org.litepal.crud.LitePalSupport;
+
+/* loaded from: classes8.dex */
+public class WebReadLockBean extends LitePalSupport {
+    public boolean inInterval;
+    public long interval;
+    public long readUseTime;
+    public long startTime;
+
+    public long getInterval() {
+        return this.interval;
+    }
+
+    public long getReadUseTime() {
+        return this.readUseTime;
+    }
+
+    public long getStartTime() {
+        return this.startTime;
+    }
+
+    public boolean isInInterval() {
+        return this.inInterval;
+    }
+
+    public void setInInterval(boolean z) {
+        this.inInterval = z;
+    }
+
+    public void setInterval(long j) {
+        this.interval = j;
+    }
+
+    public void setReadUseTime(long j) {
+        this.readUseTime = j;
+    }
+
+    public void setStartTime(long j) {
+        this.startTime = j;
+    }
+}

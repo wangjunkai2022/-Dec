@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.biquge.ebook.app.widget.HeaderView android:id="@+id/activity_disclaimer_actionbar" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="-----------  漫画章节限制  -----------"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:id="@+id/mh_chapter_test_request" android:layout_width="0dp" android:layout_height="wrap_content" android:text="请求一次限制章节" android:layout_weight="1"/>
+            </LinearLayout>
+            <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="-----------  其它  -----------"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <Button android:textSize="14sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/activity_jlsp_btn" android:layout_width="0dp" android:layout_height="50dp" android:text="跳转到激励看视频页面" android:layout_weight="1"/>
+            </LinearLayout>
+            <FrameLayout android:id="@+id/activity_gdt_ad_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <Button android:textSize="14sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/activity_test_req_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="测试请求"/>
+            <Button android:textSize="14sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/activity_tts_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="朗读测试"/>
+            <Button android:textSize="14sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/activity_test_mh_share_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="漫画新裂变-模拟FromShare#邀请码"/>
+            <Button android:textSize="14sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/tg_copy_xs" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="tgv9——小说《战神狼婿》"/>
+            <Button android:textSize="14sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/tg_copy_mh" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="tgv9——漫画《进击的巨人》"/>
+            <Button android:textSize="14sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/novel_book_download_zip" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="小说章节zip下载"/>
+            <TextView android:textSize="14sp" android:textColor="@color/color_666666" android:id="@+id/test_device_info_tv" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

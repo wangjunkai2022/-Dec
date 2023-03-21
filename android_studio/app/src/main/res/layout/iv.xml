@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.tr.comment.sdk.commons.widget.view.TrDayNightLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+            <com.tr.comment.sdk.commons.widget.TrLineView android:layout_width="2dp" android:layout_height="20dp"/>
+            <com.tr.comment.sdk.commons.widget.view.TrDayNightTextView android:textSize="14sp" android:textColor="@color/tr_sdk_comment_999999" android:ellipsize="end" android:id="@+id/a7o" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:singleLine="true"/>
+        </LinearLayout>
+        <com.tr.comment.sdk.commons.widget.TrLineView android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="10dp"/>
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <com.tr.comment.sdk.commons.widget.view.TrInputLayout android:background="@drawable/d3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <com.tr.comment.sdk.commons.widget.view.TrDayNightEditText android:textSize="15sp" android:textColor="@color/tr_sdk_comment_333333" android:gravity="center_vertical" android:id="@+id/a7c" android:background="@null" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="40dp" android:hint="@string/u8" android:maxLines="3" android:layout_weight="1"/>
+            </com.tr.comment.sdk.commons.widget.view.TrInputLayout>
+            <ImageView android:id="@+id/a87" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="40dp" android:src="@drawable/d5" android:scaleType="center"/>
+        </LinearLayout>
+    </com.tr.comment.sdk.commons.widget.view.TrDayNightLayout>
+    <com.tr.comment.sdk.commons.widget.TrStateView android:id="@+id/a7k" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

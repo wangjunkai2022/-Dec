@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="@color/color_ffffff" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/top_fl" android:layout_width="106dp" android:layout_height="141dp">
+        <ImageView android:id="@+id/item_home_recommend_c_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:background="@drawable/shape_video_bottom_bg" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="10sp" android:textColor="@color/color_ffffff" android:id="@+id/item_home_recommend_c_type" android:background="@drawable/shape_item_content_bg" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="2dp"/>
+            <TextView android:textSize="9sp" android:textColor="@color/color_ffffff" android:gravity="right" android:id="@+id/item_home_recommend_number" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="5dp"/>
+        </LinearLayout>
+        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#ffff9300" android:layout_gravity="right" android:id="@+id/item_home_recommend_c_score" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <TextView android:textSize="13sp" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@+id/item_home_recommend_c_name" android:paddingTop="5dp" android:layout_width="106dp" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:lines="1"/>
+</LinearLayout>

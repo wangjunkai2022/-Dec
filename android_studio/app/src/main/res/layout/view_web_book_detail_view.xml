@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/web_search_book_back_btn" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/txtdl_back" android:paddingStart="20dp" android:paddingEnd="10dp"/>
+            <LinearLayout android:gravity="center_vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/web_search_book_cover" android:layout_width="@dimen/book_image_list_width" android:layout_height="@dimen/book_image_list_height" android:layout_marginStart="5dp"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="15dp">
+                    <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/color_000000" android:id="@+id/web_search_book_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                        <TextView android:textSize="15sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_detail_author_txt"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/color_666666" android:id="@+id/web_search_book_author" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                        <TextView android:textSize="15sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_detail_source_txt"/>
+                        <TextView android:textSize="13sp" android:textColor="@color/color_666666" android:ellipsize="end" android:id="@+id/web_search_book_source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="14sp" android:textColor="@color/color_5d839f" android:gravity="center" android:id="@+id/web_search_book_save" android:background="@drawable/selector_drawable_btn_bg" android:paddingTop="7dp" android:paddingBottom="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/txt_add_bookshlef_txt" android:layout_marginStart="10dp" android:layout_marginEnd="20dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="14sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@+id/web_search_book_read" android:background="@drawable/selector_register_bg" android:paddingTop="7dp" android:paddingBottom="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/web_read_start_txt" android:layout_marginStart="20dp" android:layout_marginEnd="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/color_F8F8F8" android:layout_width="match_parent" android:layout_height="6dp" android:layout_marginTop="10dp"/>
+            <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/color_666666" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_detail_works_intro_txt"/>
+                <com.biquge.ebook.app.widget.ExpandableTextView android:id="@+id/book_detail_intro_text" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" expandableTextView:h1="2">
+                    <TextView android:textSize="13sp" android:textColor="@color/color_999999" android:id="@+id/expandable_text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <ImageButton android:layout_gravity="bottom|right" android:id="@+id/expand_collapse" android:background="@color/main_bg_color" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </com.biquge.ebook.app.widget.ExpandableTextView>
+            </LinearLayout>
+            <View android:background="@color/color_F8F8F8" android:layout_width="match_parent" android:layout_height="6dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/color_666666" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/book_detail_category_newchapter_txt"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/web_search_book_chapter_rv" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+                <TextView android:textSize="14sp" android:textColor="@color/color_wathet" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/web_search_book_chapter_more" android:background="@drawable/simple_bg_selector" android:layout_width="match_parent" android:layout_height="45dp" android:text="@string/web_book_total_chapter_txt"/>
+                <View android:background="@color/color_F8F8F8" android:layout_width="match_parent" android:layout_height="6dp"/>
+            </LinearLayout>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="11sp" android:textColor="@color/color_666666" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/web_search_book_web_url" android:background="@drawable/simple_bg_selector" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/web_site_detail_webview_txt"/>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.biquge.ebook.app.ui.webread.view.WebLoadingView android:id="@+id/web_loading_view" android:background="@color/main_bg_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

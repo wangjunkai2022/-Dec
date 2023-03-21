@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/a7n" android:background="@drawable/cz" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tr.comment.sdk.commons.widget.view.TrDayNightTextView android:textSize="20sp" android:textColor="@color/tr_sdk_comment_2e2e2e" android:gravity="center" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/up"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/a6r" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jh" android:paddingStart="20dp" android:paddingEnd="10dp"/>
+    </FrameLayout>
+    <com.tr.comment.sdk.commons.widget.TrLineView android:layout_width="match_parent" android:layout_height="1dp"/>
+    <com.tr.comment.sdk.view.TrCommentView android:id="@+id/a6q" android:layout_width="match_parent" android:layout_height="match_parent" app:kw="true"/>
+</LinearLayout>

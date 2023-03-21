@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height">
+        <ImageView android:id="@+id/web_site_cate_back_btn" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/txtdl_back" android:paddingStart="15dp" android:paddingEnd="15dp"/>
+        <TextView android:textSize="15sp" android:textColor="@color/color_000000" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/web_site_cate_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_marginStart="50dp" android:layout_marginEnd="50dp"/>
+        <ImageView android:layout_gravity="right" android:id="@+id/novel_dirs_actionbar_collection" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/reader_category"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.biquge.ebook.app.widget.pinnedheaderlistview.SectionPinListView android:id="@+id/web_site_cate_rv" android:layout_width="match_parent" android:layout_height="0dp" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0dp" android:layout_weight="1" android:fastScrollEnabled="true" android:fastScrollAlwaysVisible="true"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/batch_chapter_layout" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@+id/batch_chapter_pre_btn" android:background="@drawable/selector_blue_bt_bg" android:layout_width="80dp" android:layout_height="30dp" android:text="@string/web_book_dir_pre_page_txt"/>
+                <TextView android:textSize="14sp" android:textColor="@color/color_666666" android:gravity="center" android:id="@+id/batch_chapter_list_btn" android:background="@drawable/shape_search_gray_bg" android:layout_width="0dp" android:layout_height="30dp" android:text="@string/web_read_chapter_batch_title" android:lines="1" android:layout_weight="1" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+                <TextView android:textSize="15sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@+id/batch_chapter_next_btn" android:background="@drawable/selector_blue_bt_bg" android:layout_width="80dp" android:layout_height="30dp" android:text="@string/web_book_dir_next_page_txt"/>
+            </LinearLayout>
+        </LinearLayout>
+        <com.biquge.ebook.app.ui.webread.view.WebLoadingView android:id="@+id/web_book_dir_loadingview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

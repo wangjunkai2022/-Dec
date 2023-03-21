@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/color_F8F8F8" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/main_bg_color" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.biquge.ebook.app.widget.StatusBarView android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/fragment_user_info_layout" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.biquge.ebook.app.widget.CircleImageView android:id="@+id/fragment_info_headicon" android:layout_width="75dp" android:layout_height="75dp" android:src="@drawable/man"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="10dp">
+                <TextView android:textSize="20sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/fragment_info_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/info_login_register_title"/>
+                <TextView android:textSize="12.5sp" android:textColor="@color/color_666666" android:gravity="center" android:id="@+id/fragment_info_nickname_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/comple_user_info_red_tagview" android:background="@drawable/shape_red_bg" android:visibility="gone" android:layout_width="8dp" android:layout_height="8dp" android:layout_margin="3dp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:src="@drawable/sjxq_right_arrow"/>
+        </LinearLayout>
+        <com.biquge.ebook.app.widget.marqueeview.MarqueeTextView android:textSize="13sp" android:textColor="@color/color_666666" android:id="@+id/myinfo_msg_view" android:background="@drawable/selector_myinfo_msg_bg" android:paddingTop="8dp" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="5dp" android:singleLine="true" android:paddingStart="10dp" android:paddingEnd="10dp" android:layout_marginStart="5dp" android:layout_marginEnd="5dp"/>
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.biquge.ebook.app.widget.NewShareEntranceView android:id="@+id/function_new_share_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/item_interval_height"/>
+                <TextView android:id="@+id/function_navigation_mynews" android:layout_marginTop="@dimen/item_interval_height" android:text="@string/main_my_news_txt" android:drawableLeft="@drawable/lm_message" android:drawableRight="@drawable/sjxq_right_arrow" style="@style/ff"/>
+                <View style="@style/sc"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/info_same_tj_history_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/function_navigation_myfootprint" android:layout_marginTop="@dimen/item_interval_height" android:text="@string/my_footprint_title_txt" android:drawableLeft="@drawable/lm_foot" android:drawableRight="@drawable/sjxq_right_arrow" style="@style/ff"/>
+                <View android:id="@+id/function_navigation_mybooklist_line" style="@style/se"/>
+                <TextView android:id="@+id/function_navigation_mybooklist" android:text="@string/my_booklist_title_txt" android:drawableLeft="@drawable/lm_wdsd" android:drawableRight="@drawable/sjxq_right_arrow" style="@style/ff"/>
+                <TextView android:id="@+id/function_upload_book" android:layout_marginTop="@dimen/item_interval_height" android:text="@string/main_upload_book_txt" android:drawableLeft="@drawable/im_upload_book" android:drawableRight="@drawable/sjxq_right_arrow" style="@style/ff"/>
+                <FrameLayout android:id="@+id/function_want_book_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/function_want_book" android:text="@string/main_want_book_txt" android:drawableLeft="@drawable/lm_want_book" android:drawableRight="@drawable/sjxq_right_arrow" style="@style/ff"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/color_666666" android:layout_gravity="center" android:id="@+id/function_want_book_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="38dp"/>
+                    <View style="@style/se"/>
+                </FrameLayout>
+                <TextView android:id="@+id/function_navigation_share_friend" android:layout_marginTop="@dimen/item_interval_height" android:text="@string/main_share_friend_txt" android:drawableLeft="@drawable/lm_upload" android:drawableRight="@drawable/sjxq_right_arrow" style="@style/ff"/>
+                <View style="@style/se"/>
+                <TextView android:id="@+id/function_navigation_evaluate" android:layout_marginBottom="@dimen/item_interval_height" android:text="@string/main_app_evaluate_txt" android:drawableLeft="@drawable/lm_goodcomment" android:drawableRight="@drawable/sjxq_right_arrow" style="@style/ff"/>
+                <TextView android:id="@+id/function_navigation_cache_manager" android:text="@string/main_cache_manager_txt" android:drawableLeft="@drawable/lm_download" android:drawableRight="@drawable/sjxq_right_arrow" style="@style/ff"/>
+                <TextView android:id="@+id/function_navigation_set" android:layout_marginTop="@dimen/item_interval_height" android:text="@string/setting_title_txt" android:drawableLeft="@drawable/lm_setting" android:drawableRight="@drawable/sjxq_right_arrow" style="@style/ff"/>
+            </LinearLayout>
+            <ViewStub android:id="@+id/new_share_detail_layout" android:layout="@layout/include_share_detail_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

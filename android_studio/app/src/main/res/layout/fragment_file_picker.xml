@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_path" android:background="@color/color_F8F8F8" android:layout_width="match_parent" android:layout_height="45dp">
+        <TextView android:textSize="14sp" android:gravity="left" android:id="@+id/tv_path" android:padding="6dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="" android:singleLine="true" android:layout_weight="1"/>
+        <TextView android:textColor="@color/main_tab_txt_color" android:gravity="center" android:id="@+id/tv_back" android:background="@drawable/simple_bg_selector" android:padding="10dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/import_book_imported_up_txt"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.biquge.ebook.app.ui.book.view.ReadBookLayout android:id="@+id/read_content_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.manhua.ui.widget.ComicReaderViewpager android:id="@+id/read_content_viewpager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/read_content_recyclerview_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.biquge.ebook.app.widget.BookTitleTextView android:id="@+id/book_read_chapter_name_txt" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="30dp"/>
+            <com.manhua.ui.widget.PageRecyclerView android:id="@+id/read_content_recyclerview" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+            <com.biquge.ebook.app.widget.BookPageTextView android:id="@+id/book_read_slide_page_txt" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="30dp"/>
+        </LinearLayout>
+    </com.biquge.ebook.app.ui.book.view.ReadBookLayout>
+    <ViewStub android:id="@+id/read_pv_page" android:layout="@layout/include_simulation_readview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/roll_scroll_view" android:layout="@layout/include_read_auto_scrollview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.biquge.ebook.app.ad.ads.AdViewBanner android:layout_gravity="bottom|center_horizontal" android:id="@+id/adview_banner" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.manhua.ui.widget.PublicLoadingView android:id="@+id/bookread_loading_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.biquge.ebook.app.ui.book.NewBookReadMenuView android:id="@+id/read_book_menu_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/read_chapter_video_ad_view" android:layout="@layout/include_bookread_ad_page_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/read_book_reward_view" android:layout="@layout/include_reward_video_ad_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/copyright_tips_layout" android:layout="@layout/include_copyright_tips_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/fragment_cartton_tg_layout" android:layout="@layout/include_mhtg_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/app_upgrade_layout" android:layout="@layout/include_app_upgrade_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:id="@+id/book_night_view" android:background="#10000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

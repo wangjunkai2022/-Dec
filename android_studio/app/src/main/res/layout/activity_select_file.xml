@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/scan_file_actionbar" layout="@layout/include_header_layout"/>
+    <com.shizhefei.view.indicator.FixedIndicatorView android:id="@+id/scan_file_indicator" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="45dp"/>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/scan_file_viewpager" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <TextView android:textSize="15sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@+id/scan_file_import_bt" android:background="@drawable/selector_register_bg" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="15dp" android:layout_marginTop="5dp" android:layout_marginRight="15dp" android:layout_marginBottom="5dp" android:text="@string/main_confirm"/>
+</LinearLayout>

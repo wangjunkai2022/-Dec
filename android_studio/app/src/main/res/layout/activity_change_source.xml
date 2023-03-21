@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.biquge.ebook.app.widget.HeaderView android:id="@+id/change_source_actionbar" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:scrollbarSize="5dp" android:scrollbarThumbVertical="@drawable/recy_vertical_scrollbar" android:scrollbarTrackVertical="@drawable/recy_vertical_scrollbar_bg" android:id="@+id/change_source_rv_list" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:fadeScrollbars="false" android:overScrollMode="never"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/tv_empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+            <ImageView android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/emptyimg"/>
+            <TextView android:textSize="13sp" android:textColor="@color/color_999999" android:gravity="top|center_horizontal" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="亲，当前暂未找到该书的可用源，\10您可以稍后再次尝试。"/>
+        </LinearLayout>
+        <com.manhua.ui.widget.PublicLoadingView android:id="@+id/public_loadingview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/add_book_shelf_actionbar" layout="@layout/include_header_layout"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_list" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10dp" android:paddingTop="8dp" android:paddingRight="10dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="55dp">
+        <Button android:textSize="14sp" android:textColor="@color/main_tab_txt_color" android:gravity="center" android:id="@+id/select_cancel_bt" android:background="@drawable/simple_bg_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="10dp" android:text="@string/main_cancel" android:layout_weight="1" style="?android:attr/buttonBarButtonStyle"/>
+        <Button android:textSize="14sp" android:textColor="@color/main_tab_txt_color" android:gravity="center" android:id="@+id/select_finish_bt" android:background="@drawable/simple_bg_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="@string/main_select_count_batch" android:layout_weight="1" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

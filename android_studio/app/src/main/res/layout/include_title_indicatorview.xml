@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.shizhefei.view.indicator.FixedIndicatorView android:layout_gravity="center" android:id="@+id/fragment_home_indicator" android:paddingBottom="2dp" android:visibility="gone" android:layout_width="130dp" android:layout_height="35dp"/>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/fragment_store_switch_layout" android:layout_width="wrap_content" android:layout_height="33dp">
+        <TextView android:textSize="13sp" android:textColor="@drawable/selector_bookcity_tab_txt" android:gravity="center" android:id="@+id/fragment_store_switch_left" android:background="@drawable/selector_title_tab_man" android:layout_width="75dp" android:layout_height="match_parent" android:text="@string/ebook_txt"/>
+        <TextView android:textSize="13sp" android:textColor="@drawable/selector_bookcity_tab_txt" android:gravity="center" android:id="@+id/fragment_store_switch_middle" android:background="@drawable/selector_title_tab_middle" android:layout_width="75dp" android:layout_height="match_parent" android:text="@string/picture_txt" android:layout_marginStart="-0.5dp" android:layout_marginEnd="-0.5dp"/>
+        <TextView android:textSize="13sp" android:textColor="@drawable/selector_bookcity_tab_txt" android:gravity="center" android:id="@+id/fragment_store_switch_right" android:background="@drawable/selector_title_tab_woman" android:layout_width="75dp" android:layout_height="match_parent" android:text="@string/comic_txt"/>
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:textColor="@color/color_ffffff" android:layout_gravity="center" android:id="@+id/fragment_home_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_book_shelf_title_txt"/>
+</merge>

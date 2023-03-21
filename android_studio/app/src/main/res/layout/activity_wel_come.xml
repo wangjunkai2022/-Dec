@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/welcome_ad_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="80dp"/>
+    <ViewStub android:id="@+id/welcome_select_gender_a" android:layout="@layout/view_select_gender_a_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/welcome_select_gender" android:layout="@layout/view_select_gender_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/main_bg_color" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/search_actionbar_layout" android:background="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.biquge.ebook.app.widget.StatusBarView android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height">
+            <RelativeLayout android:id="@+id/search_back_layout" android:layout_width="50dp" android:layout_height="match_parent">
+                <View android:id="@+id/search_toolbar_more_tag" android:layout_width="0.5dp" android:layout_height="0.5dp" android:layout_marginLeft="12dp" android:layout_marginBottom="9dp" android:layout_alignParentBottom="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kd_back_white" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="14sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@+id/search_platform_spinner" android:paddingRight="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableRight="@drawable/search_down_icon"/>
+            <com.biquge.ebook.app.widget.ClearEditText android:textSize="12sp" android:textColor="@color/color_666666" android:textColorHint="@color/color_999999" android:gravity="center_vertical" android:id="@+id/search_input_et" android:background="@drawable/shape_search_white_bg" android:layout_width="0dp" android:layout_height="33dp" android:hint="@string/search_book_or_author_txt" android:singleLine="true" android:drawablePadding="3dp" android:layout_weight="1" android:imeOptions="actionSearch" android:drawableStart="@drawable/search_icon_gray" android:paddingEnd="5dp"/>
+            <TextView android:textSize="14sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@+id/search_gosearch_txt" android:layout_width="50dp" android:layout_height="50dp" android:text="@string/search_title_txt"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/search_select_layout" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentBottom="true">
+        <Button android:textSize="14sp" android:textColor="@color/main_tab_txt_color" android:gravity="center" android:id="@+id/select_cancel_bt" android:background="@drawable/simple_bg_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="10dp" android:text="@string/main_cancel" android:layout_weight="1"/>
+        <Button android:textSize="14sp" android:textColor="@color/main_tab_txt_color" android:gravity="center" android:id="@+id/select_finish_bt" android:background="@drawable/simple_bg_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="@string/main_select_count_batch" android:layout_weight="1"/>
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/search_select_layout" android:layout_below="@+id/search_actionbar_layout">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <View android:background="@color/color_F8F8F8" android:layout_width="match_parent" android:layout_height="8dp"/>
+            <RelativeLayout android:paddingLeft="10dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_hot_search_txt" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <TextView android:textSize="12sp" android:textColor="@color/color_999999" android:gravity="center_vertical" android:id="@+id/search_hot_search_refresh_txt" android:background="@drawable/simple_bg_selector" android:paddingLeft="10dp" android:paddingTop="6dp" android:paddingRight="10dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/book_detail_exchange_txt" android:drawableLeft="@drawable/change" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/search_hot_recyclerView" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <View android:background="@color/color_F8F8F8" android:layout_width="match_parent" android:layout_height="8dp"/>
+            <com.biquge.ebook.app.ad.ads.AdViewRectangle android:id="@+id/adview_search_rectangle" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <RelativeLayout android:paddingLeft="10dp" android:paddingRight="5dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/color_666666" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/search_search_history_txt" android:layout_alignParentLeft="true"/>
+                <TextView android:textSize="12sp" android:textColor="@color/color_999999" android:id="@+id/search_hot_clear_history_txt" android:background="@drawable/simple_bg_selector" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_clear_history_txt" android:layout_alignParentRight="true"/>
+                <com.google.android.flexbox.FlexboxLayout android:id="@+id/search_history_flexbox_layout" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/search_hot_clear_history_txt" app:c="5" app:da="0" app:db="1" app:e6="0" app:fi="1.5"/>
+            </RelativeLayout>
+            <ViewStub android:id="@+id/native_list_adview_layout" android:layout="@layout/include_blocknative_adlist_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@+id/search_result_layout" android:background="@color/main_bg_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/search_select_layout" android:layout_below="@+id/search_actionbar_layout">
+        <com.shizhefei.view.indicator.ScrollIndicatorView android:id="@+id/search_model_indicator" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="45dp"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/search_result_qs_layout" android:background="#12000000" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="13sp" android:textColor="@color/color_666666" android:gravity="center_vertical" android:id="@+id/search_result_qs_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_result_bottom_tips_txt"/>
+        </LinearLayout>
+        <com.chanven.lib.cptr.PtrClassicFrameLayout android:id="@+id/refresh_rv_layout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:hz="100" app:i0="1000" app:i2="true" app:i3="false" app:i4="1" app:i5="3.5">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </com.chanven.lib.cptr.PtrClassicFrameLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/search_fast_result_layout" android:background="@color/main_bg_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/search_select_layout" android:layout_below="@+id/search_actionbar_layout">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/search_fast_result_rv" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</RelativeLayout>

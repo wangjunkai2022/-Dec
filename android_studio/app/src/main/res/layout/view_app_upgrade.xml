@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/main_bg_color" android:paddingBottom="100dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/app_upgrade_close_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.biquge.ebook.app.widget.StatusBarView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/app_upgrade_close_btn" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="@dimen/titlebar_height" android:src="@drawable/brown_before"/>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="50dp" android:layout_marginBottom="10dp" android:fillViewport="true" android:layout_weight="1">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="15sp" android:textColor="@color/color_333333" android:id="@+id/app_upgrade_desc_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:paddingStart="15dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp">
+        <TextView android:textSize="15sp" android:textColor="@color/txt_normal_color" android:gravity="center" android:id="@+id/app_upgrade_cancel_btn" android:background="@drawable/selector_gray_cancel_btn_bg" android:layout_width="0dp" android:layout_height="41dp" android:text="@string/mgtg_two_btn_cancel_txt" android:singleLine="true" android:layout_weight="1" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+        <com.biquge.ebook.app.ui.view.DownloadProgressButton android:layout_gravity="center" android:id="@+id/app_upgrade_download_btn" android:layout_width="0dp" android:layout_height="41dp" android:layout_weight="1" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+    </LinearLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/main_tab_txt_color" android:layout_gravity="center_horizontal" android:id="@+id/app_upgrade_download_status_tv" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/app_download_new_version_txt"/>
+</LinearLayout>

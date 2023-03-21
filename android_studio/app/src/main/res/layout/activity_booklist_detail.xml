@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/activity_booklist_detail_actionbar" layout="@layout/include_header_layout"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/activity_booklist_detail_actionbar"/>
+    <com.manhua.ui.widget.PublicLoadingView android:id="@+id/public_loadingview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/activity_booklist_detail_actionbar"/>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/main_bg_color" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.biquge.ebook.app.widget.HeaderView android:id="@+id/activity_element_detail_actionbar" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_list" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/activity_element_detail_actionbar"/>
+    <com.manhua.ui.widget.PublicLoadingView android:id="@+id/public_loadingview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/activity_element_detail_actionbar"/>
+</RelativeLayout>

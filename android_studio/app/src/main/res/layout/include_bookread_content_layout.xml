@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.biquge.ebook.app.widget.BookContentTextView android:id="@+id/item_read_content_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.manhua.ui.widget.barrage.BarrageView android:id="@+id/pv_comic_barrageview" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/code_status_failed_layout" android:visibility="gone" android:layout="@layout/code_status_failed_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</merge>

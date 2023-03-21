@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.biquge.ebook.app.ui.book.view.ReadBookLayout android:id="@+id/read_content_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.manhua.ui.widget.ComicReaderViewpager android:id="@+id/read_content_viewpager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.manhua.ui.widget.ZoomRecyclerView android:id="@+id/read_content_recyclerview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.biquge.ebook.app.ui.book.view.ReadBookLayout>
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="200dp">
+        <com.manhua.ui.widget.ComicPageTitleView android:textSize="12sp" android:textColor="@color/color_ffffff" android:layout_gravity="bottom|right" android:id="@+id/read_bottom_title" android:background="@drawable/shape_comic_page_bg" android:paddingLeft="10dp" android:paddingTop="2dp" android:paddingRight="10dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.biquge.ebook.app.ad.ads.AdViewBanner android:layout_gravity="center_horizontal" android:id="@+id/adview_banner" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <com.manhua.ui.widget.ComicReadMenuView android:id="@+id/read_book_menu_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/read_book_reward_view" android:layout="@layout/include_reward_video_ad_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.manhua.ui.widget.PublicLoadingView android:id="@+id/loading_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/read_chapter_video_ad_view" android:layout="@layout/include_bookread_ad_page_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/copyright_tips_layout" android:layout="@layout/include_copyright_tips_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/fragment_cartton_tg_layout" android:layout="@layout/include_mhtg_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/app_upgrade_layout" android:layout="@layout/include_app_upgrade_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:id="@+id/comic_night_view" android:background="#65000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

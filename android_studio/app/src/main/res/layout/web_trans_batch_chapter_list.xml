@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/shape_dialog_tips_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17sp" android:textColor="@color/_xpopup_title_color" android:ellipsize="end" android:gravity="center" android:id="@+id/a97" android:paddingTop="14dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="18dp" android:paddingEnd="18dp"/>
+    </FrameLayout>
+    <View android:id="@+id/abi" android:background="@color/_xpopup_list_divider" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <com.lxj.xpopup.widget.VerticalRecyclerView android:orientation="vertical" android:id="@+id/a18" android:layout_width="match_parent" android:layout_height="300dp" android:layout_marginBottom="4dp" android:overScrollMode="never" android:layout_marginStart="4dp" android:layout_marginEnd="4dp"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/shape_model_top_bg_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="5dp" android:paddingEnd="5dp">
+    <ImageView android:id="@+id/item_store_module_nav_icon" android:visibility="gone" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginTop="3dp" android:scaleType="centerInside" android:layout_marginStart="2dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_weight="1">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/color_666666" android:id="@+id/item_store_module_title_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="5dp"/>
+        <ImageView android:id="@+id/item_store_module_refresh_bt" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/change"/>
+    </LinearLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/item_store_module_more_bt" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="6dp" android:paddingBottom="10dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tips_more_txt" android:drawableRight="@drawable/sc_more" android:drawablePadding="2dp"/>
+</LinearLayout>

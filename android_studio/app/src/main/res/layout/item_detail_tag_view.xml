@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="10sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@+id/item_simple_txt" android:background="@drawable/shape_tag_bg_detail" android:paddingTop="3.6dp" android:paddingBottom="3.6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="11dp" android:paddingEnd="11dp"/>
+</LinearLayout>

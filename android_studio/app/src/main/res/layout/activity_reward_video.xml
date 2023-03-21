@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.biquge.ebook.app.widget.HeaderView android:id="@+id/activity_reward_video_actionbar" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/reward_video_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/reward_video_state_iv" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginTop="30dp" android:src="@drawable/man"/>
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/reward_video_state_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/reward_video_from_ad_success_txt" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+            <TextView android:textSize="14sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/reward_video_message_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/reward_video_from_ad_tips_txt" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+            <TextView android:textSize="13sp" android:textColor="@color/color_ff414c" android:gravity="center" android:id="@+id/reward_video_message_public_time_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/reward_video_from_ad_tips_txt" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+            <TextView android:textSize="14sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@+id/eward_video_submit" android:background="@drawable/selector_register_bg" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="15dp" android:layout_marginTop="30dp" android:layout_marginRight="15dp" android:text="@string/main_confirm"/>
+        </LinearLayout>
+        <include android:id="@+id/reward_video_loading_layout" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/code_status_loading_view"/>
+    </FrameLayout>
+</LinearLayout>

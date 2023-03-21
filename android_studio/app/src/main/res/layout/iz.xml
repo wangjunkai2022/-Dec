@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/a7q" android:layout_width="@dimen/dv" android:layout_height="@dimen/dv"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="14sp" android:textColor="@color/tr_sdk_comment_4f6883" android:id="@+id/a7p" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="10sp" android:textColor="@color/tr_sdk_comment_4f6883" android:id="@+id/a7y" android:background="@drawable/d_" android:paddingLeft="3dp" android:paddingTop="1dp" android:paddingRight="3dp" android:paddingBottom="1dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="@string/um"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/a7w" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="11sp" android:textColor="@drawable/d2" android:id="@+id/a7x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/u9"/>
+                <com.tr.comment.sdk.commons.widget.view.TrDayNightLikeImg android:id="@+id/a7v" android:layout_width="13dp" android:layout_height="13dp" android:layout_marginLeft="2dp" android:src="@drawable/d1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <com.tr.comment.sdk.commons.widget.TrExpandTextView android:textSize="12sp" android:textColor="@color/tr_sdk_comment_333333" android:id="@+id/a7r" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" app:ky="3" app:kz="13sp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <TextView android:textSize="11sp" android:textColor="@color/tr_sdk_comment_666666" android:id="@+id/a7s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+            <FrameLayout android:id="@+id/a7z" android:paddingTop="1dp" android:paddingBottom="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_toRightOf="@+id/a7s" android:layout_centerVertical="true">
+                <com.tr.comment.sdk.commons.widget.view.TrDayNightReplyBtn android:textSize="10sp" android:textColor="@color/tr_sdk_comment_2e2e2e" android:gravity="center" android:id="@+id/a80" android:background="@drawable/da" android:paddingLeft="10dp" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/uc" android:drawableRight="@drawable/jj" android:drawablePadding="2dp" android:paddingEnd="10dp"/>
+            </FrameLayout>
+            <ImageView android:layout_gravity="right" android:id="@+id/a7u" android:padding="7dp" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/ky" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/simple_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/comic_item_list_image" android:layout_width="match_parent" android:layout_height="170dp" android:layout_margin="10dp" android:scaleType="centerCrop"/>
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/text_bg" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="70dp" android:layout_alignBottom="@+id/comic_item_list_image" android:layout_marginStart="10dp" android:layout_marginEnd="10dp">
+        <TextView android:textSize="15sp" android:textColor="@color/color_ffffff" android:ellipsize="end" android:id="@+id/comic_item_list_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="100dp" android:singleLine="true"/>
+        <TextView android:textSize="11.5sp" android:textColor="@color/color_CEC8C0" android:ellipsize="end" android:id="@+id/comic_item_list_info_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:layout_marginRight="100dp" android:singleLine="true"/>
+    </LinearLayout>
+    <TextView android:textSize="13sp" android:textColor="@color/color_ffffff" android:gravity="center" android:background="@drawable/shape_detail_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="@string/tips_config_detail_tip_title_txt" android:drawableRight="@drawable/list_more" android:layout_alignBottom="@+id/comic_item_list_image" android:layout_alignParentRight="true" android:layout_marginEnd="15dp"/>
+    <View android:layout_below="@+id/comic_item_list_image" style="@style/sc"/>
+</RelativeLayout>

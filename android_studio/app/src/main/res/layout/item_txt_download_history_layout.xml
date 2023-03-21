@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.biquge.ebook.app.widget.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/item_txt_download_history_layout" layout="@layout/include_txt_download_history_layout"/>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+        <TextView android:textSize="14sp" android:textColor="@color/color_ffffff" android:gravity="center" android:layout_gravity="right" android:id="@+id/item_txt_download_history_delete" android:background="@color/color_F56C6C" android:layout_width="60dp" android:layout_height="match_parent" android:text="@string/main_delete"/>
+    </LinearLayout>
+</com.biquge.ebook.app.widget.SwipeItemLayout>

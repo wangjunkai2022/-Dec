@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/selector_main_tab_shelf" android:id="@+id/menu_main_tab_home" android:title="@string/main_tab_book_shelf"/>
+    <item android:icon="@drawable/selector_main_tab_store" android:id="@+id/menu_main_tab_ranking" android:title="@string/main_tab_book_city"/>
+    <item android:icon="@drawable/selector_main_tab_category" android:id="@+id/menu_main_tab_category" android:title="@string/main_tab_book_city_category_txt"/>
+    <item android:icon="@drawable/selector_main_tab_game" android:id="@+id/menu_main_tab_share" android:title="@string/main_tab_book_discover"/>
+    <item android:icon="@drawable/selector_main_tab_info" android:id="@+id/menu_main_tab_info" android:title="@string/main_tab_book_info"/>
+</menu>

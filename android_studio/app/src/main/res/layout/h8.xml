@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="@dimen/b2">
+    <LinearLayout android:layout_gravity="top|center_horizontal" android:orientation="horizontal" android:paddingLeft="@dimen/az" android:paddingTop="@dimen/az" android:paddingRight="@dimen/az" android:layout_width="match_parent" android:layout_height="@dimen/b2" android:paddingStart="@dimen/az" android:paddingEnd="@dimen/az" style="?attr/gs">
+        <com.google.android.material.button.MaterialButton android:gravity="center" android:layout_gravity="top" android:id="@+id/gh" android:padding="12dp" android:layout_width="@dimen/co" android:layout_height="@dimen/co" android:insetTop="0dp" android:insetBottom="0dp" android:contentDescription="@string/m2" app:icon="@drawable/v" app:iconTint="?attr/am" app:rippleColor="@color/mtrl_btn_ripple_color" style="@style/q4"/>
+        <FrameLayout android:id="@+id/wt" android:paddingLeft="@dimen/b4" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:paddingStart="@dimen/b4">
+            <TextView android:gravity="start|bottom" android:layout_gravity="start|top" android:id="@+id/wy" android:layout_width="match_parent" android:layout_height="wrap_content" app:firstBaselineToTopHeight="@dimen/bk" style="?attr/gu"/>
+            <TextView android:gravity="start|bottom" android:layout_gravity="start|top" android:id="@+id/ws" android:paddingBottom="@dimen/bd" android:layout_width="match_parent" android:layout_height="wrap_content" app:firstBaselineToTopHeight="@dimen/be" app:lineHeight="@dimen/b3" style="?attr/gt"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="@integer/b" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.google.android.material.button.MaterialButton android:layout_gravity="end|top" android:id="@+id/jh" android:layout_width="wrap_content" android:layout_height="@dimen/co" android:text="@string/mi" android:contentDescription="@string/mi" style="?attr/gq"/>
+            <include layout="@layout/ha"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="@dimen/b0" style="?attr/gr"/>
+</merge>

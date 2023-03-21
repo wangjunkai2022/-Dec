@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.biquge.ebook.app.widget.StatusBarView android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height">
+            <ImageView android:id="@+id/back_view" android:src="@drawable/txtdl_back" android:scaleType="center" style="@style/n3"/>
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/read_bg_title_txt"/>
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/red_backgroup_rv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/dialog_custom_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="250dp">
+                <ImageView android:id="@+id/custom_view_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+                <com.biquge.ebook.app.widget.ExampleFontTextView android:layout_gravity="center" android:id="@+id/custom_view_font" android:layout_width="match_parent" android:layout_height="120dp"/>
+            </FrameLayout>
+            <com.shizhefei.view.indicator.ScrollIndicatorView android:id="@+id/custom_bg_indicator" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="60dp"/>
+            <top.defaults.colorpicker.ColorPickerView android:id="@+id/custom_colorPickerView" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:bz="true"/>
+            <LinearLayout android:orientation="horizontal" android:background="#20000000" android:layout_width="match_parent" android:layout_height="60dp">
+                <TextView android:textSize="16sp" android:textColor="@color/color_ff414c" android:gravity="center" android:id="@+id/custom_bg_reset" android:layout_width="0dp" android:layout_height="match_parent" android:text="重置" android:layout_weight="1"/>
+                <TextView android:textSize="16sp" android:textColor="@color/color_ff414c" android:gravity="center" android:id="@+id/custom_bg_ok" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/main_confirm" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

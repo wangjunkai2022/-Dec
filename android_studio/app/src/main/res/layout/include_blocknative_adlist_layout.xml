@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/book_detail_adlist_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/include_blocknative_topview" android:background="@color/color_F8F8F8" android:layout_width="match_parent" android:layout_height="6dp"/>
+    <RelativeLayout android:id="@+id/include_blocknative_titleview" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/native_adlist_title_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_detail_native_ad_title_txt" android:layout_centerVertical="true"/>
+        <TextView android:textSize="12sp" android:textColor="@color/color_666666" android:gravity="center_vertical" android:id="@+id/native_adlist_refresh_bt" android:background="@drawable/simple_bg_selector" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_detail_exchange_txt" android:drawableLeft="@drawable/change" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ViewStub android:id="@+id/item_blocknative_book_one_layout" android:layout="@layout/item_simple_book_list_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ViewStub android:id="@+id/item_blocknative_book_two_layout" android:layout="@layout/item_simple_book_list_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ViewStub android:id="@+id/item_blocknative_book_three_layout" android:layout="@layout/item_simple_book_list_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

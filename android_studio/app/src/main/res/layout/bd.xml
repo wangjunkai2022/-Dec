@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="@dimen/x">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/vf" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:id="@+id/vh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/w" style="?android:attr/progressBarStyleSmall"/>
+        <TextView android:textSize="@dimen/dl" android:textColor="@android:color/black" android:id="@+id/vi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/w" android:text="@string/dt"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/ve" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:layout_gravity="center" android:id="@+id/a94" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ds"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/vd" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textColor="@android:color/darker_gray" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dr"/>
+    </FrameLayout>
+</FrameLayout>

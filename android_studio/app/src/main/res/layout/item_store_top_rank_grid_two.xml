@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@drawable/simple_bg_selector" android:paddingTop="10dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10dp" android:paddingEnd="10dp">
+    <ImageView android:id="@+id/item_rank_img" android:layout_width="@dimen/book_image_list_small_width" android:layout_height="@dimen/book_image_list_small_height" android:scaleType="centerCrop"/>
+    <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/item_rank_index_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="5dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginStart="5dp">
+        <TextView android:textSize="@dimen/item_book_name_txt_size" android:textColor="@color/color_333333" android:ellipsize="end" android:gravity="start" android:id="@+id/item_rank_book_name_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="2"/>
+        <TextView android:textSize="11sp" android:textColor="#fff96149" android:ellipsize="end" android:id="@+id/item_rank_book_hot_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:lines="1" android:layout_marginStart="1dp"/>
+    </LinearLayout>
+</LinearLayout>

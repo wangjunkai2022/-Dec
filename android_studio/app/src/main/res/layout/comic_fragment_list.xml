@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/fragment_city_sex_indicator_layout" android:background="@color/search_edittext_bg_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.shizhefei.view.indicator.ScrollIndicatorView android:id="@+id/fragment_city_sex_indicator" android:layout_width="match_parent" android:layout_height="40dp"/>
+        <com.shizhefei.view.indicator.ScrollIndicatorView android:id="@+id/fragment_city_element_indicator" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="2dp"/>
+    </LinearLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/fragment_city_element_viewPager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/fragment_city_sex_indicator_layout"/>
+    <FrameLayout android:id="@+id/fragment_element_menu_bt" android:background="@drawable/selector_create_bg" android:layout_width="42dp" android:layout_height="42dp" android:layout_marginRight="20dp" android:layout_marginBottom="40dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <View android:layout_gravity="center" android:background="#ffffffff" android:layout_width="20dp" android:layout_height="2dp"/>
+        <View android:layout_gravity="center" android:background="#ffffffff" android:layout_width="2dp" android:layout_height="20dp"/>
+    </FrameLayout>
+</RelativeLayout>

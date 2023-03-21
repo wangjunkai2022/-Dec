@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.biquge.ebook.app.widget.BookTitleTextView android:id="@+id/book_read_chapter_name_txt" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="30dp"/>
+    <com.biquge.ebook.app.widget.ReadContentLayout android:id="@+id/book_read_content_layout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <com.biquge.ebook.app.widget.BookPageTextView android:id="@+id/book_read_slide_page_txt" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="30dp"/>
+</LinearLayout>

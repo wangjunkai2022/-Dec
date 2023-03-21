@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/fragment_shelf_toolbar_layout" android:background="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.biquge.ebook.app.widget.StatusBarView android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height">
+            <ImageView android:id="@+id/book_shelf_action_more" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/comic_bottom_contents_nor" android:paddingStart="18dp" android:paddingEnd="15dp"/>
+            <TextView android:textSize="14sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@+id/book_shelf_action_edit_ok" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/main_finish" android:paddingStart="18dp" android:paddingEnd="15dp"/>
+            <com.biquge.ebook.app.widget.TitleIndicatorView android:id="@+id/title_indicator_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/fragment_home_search_bt" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/search" android:layout_alignParentRight="true" android:paddingStart="15dp" android:paddingEnd="18dp"/>
+        </RelativeLayout>
+        <com.biquge.ebook.app.widget.TopMsgView android:id="@+id/home_public_tips_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/fragment_shelf_toolbar_layout">
+        <LinearLayout android:orientation="vertical" android:id="@+id/adview_top_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.shizhefei.view.viewpager.SViewPager android:id="@+id/fragment_home_viewPager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <ViewStub android:id="@+id/fragment_shelf_float_adview" android:layout="@layout/include_ad_floatview" android:layout_width="52dp" android:layout_height="52dp" android:layout_marginRight="12dp" android:layout_marginBottom="35dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <ViewStub android:id="@+id/home_app_upgrade_layout" android:layout="@layout/include_app_upgrade_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/fragment_shelf_toolbar_layout"/>
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.biquge.ebook.app.widget.HeaderView android:id="@+id/login_actionbar" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="30dp" android:paddingTop="20dp" android:paddingRight="30dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/shape_login_input_bg" android:layout_width="match_parent" android:layout_height="@dimen/input_et_height">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_login_account" android:layout_marginStart="12dp"/>
+            <View android:layout_width="1dp" android:layout_height="25dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp" style="@style/sf"/>
+            <com.biquge.ebook.app.widget.ClearEditText android:textSize="14sp" android:textColor="@color/color_333333" android:textColorHint="@color/color_999999" android:gravity="center_vertical" android:id="@+id/login_account_et" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/please_input_account" android:singleLine="true" android:inputType="textVisiblePassword" android:paddingEnd="6dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/shape_login_input_bg" android:layout_width="match_parent" android:layout_height="@dimen/input_et_height" android:layout_marginTop="10dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_login_password" android:layout_marginStart="12dp"/>
+            <View android:layout_width="1dp" android:layout_height="25dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp" style="@style/sf"/>
+            <com.biquge.ebook.app.widget.ClearEditText android:textSize="14sp" android:textColor="@color/color_333333" android:textColorHint="@color/color_999999" android:gravity="center_vertical" android:id="@+id/login_password_et" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/please_input_password" android:singleLine="true" android:inputType="textPassword" android:paddingEnd="6dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/shape_login_input_bg" android:layout_width="match_parent" android:layout_height="@dimen/input_et_height" android:layout_marginTop="10dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_login_password" android:layout_marginStart="12dp"/>
+            <View android:layout_width="1dp" android:layout_height="25dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp" style="@style/sf"/>
+            <com.biquge.ebook.app.widget.ClearEditText android:textSize="14sp" android:textColor="@color/color_333333" android:textColorHint="@color/color_999999" android:gravity="center_vertical" android:id="@+id/login_password_confirm_et" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/please_input_password_confirm" android:singleLine="true" android:inputType="textPassword" android:paddingEnd="6dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/shape_login_input_bg" android:layout_width="match_parent" android:layout_height="@dimen/input_et_height" android:layout_marginTop="10dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_login_email" android:layout_marginStart="12dp"/>
+            <View android:layout_width="1dp" android:layout_height="25dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp" style="@style/sf"/>
+            <com.biquge.ebook.app.widget.ClearEditText android:textSize="14sp" android:textColor="@color/color_333333" android:textColorHint="@color/color_999999" android:gravity="center_vertical" android:id="@+id/login_email_et" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/please_input_email_number" android:singleLine="true" android:inputType="textEmailAddress" android:paddingEnd="6dp"/>
+        </LinearLayout>
+        <TextView android:textSize="12sp" android:textColor="@color/color_666666" android:gravity="center_vertical" android:id="@+id/register_email_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:text="@string/register_bind_email_txt" android:drawableLeft="@drawable/login_email_tip" android:drawablePadding="2dp"/>
+        <TextView android:textSize="14sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@+id/login_login_bt" android:background="@drawable/selector_red_semicircle_bg" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="30dp" android:text="@string/login_register_btn_txt"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="30dp">
+        <CheckBox android:id="@+id/privacy_agreement_cb" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/fc"/>
+    </LinearLayout>
+</LinearLayout>

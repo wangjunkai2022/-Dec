@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/activity_rank_list_toolbar" layout="@layout/include_header_layout"/>
+    <com.shizhefei.view.indicator.FixedIndicatorView android:id="@+id/activity_booklist_indicator" android:paddingTop="10dp" android:paddingBottom="7dp" android:layout_width="match_parent" android:layout_height="46dp" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+    <View style="@style/sc"/>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/activity_booklist_viewPager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

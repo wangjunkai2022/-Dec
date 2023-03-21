@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/book_detail_header_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="center" android:id="@+id/comic_item_content_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="60sp" android:textColor="@color/color_999999" android:id="@+id/pv_comic_loading_index_tv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ProgressBar android:id="@+id/pv_comic_loading_pv" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="10dp"/>
+        </LinearLayout>
+        <com.manhua.ui.widget.photoview.PhotoView android:id="@+id/pv_comic" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.manhua.ui.widget.barrage.BarrageView android:layout_gravity="center" android:id="@+id/pv_comic_barrageview" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/comic_item_failed_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="14sp" android:textColor="@color/color_ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comic_load_image_failed_txt"/>
+        <TextView android:textSize="14sp" android:textColor="@color/color_ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/tips_reload_txt" android:drawableTop="@drawable/comic_image_refresh"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_item_save" android:orderInCategory="90" android:title="@string/create_element_save_txt" app:showAsAction="always"/>
+    <item android:id="@+id/menu_item_release" android:orderInCategory="100" android:title="@string/create_element_release_txt" app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/a7j" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.tr.comment.sdk.commons.widget.view.TrInputLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/d3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.tr.comment.sdk.commons.widget.view.TrDayNightTextView android:textSize="14sp" android:textColor="@color/tr_sdk_comment_666666" android:gravity="center_vertical" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="12dp" android:text="@string/ui"/>
+    </com.tr.comment.sdk.commons.widget.view.TrInputLayout>
+    <ImageView android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="40dp" android:src="@drawable/d5" android:scaleType="center"/>
+</LinearLayout>

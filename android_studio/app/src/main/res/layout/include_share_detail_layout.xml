@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="@drawable/share_qrcode_bg" android:padding="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/share_detail_icon" android:layout_width="@dimen/book_image_list_width" android:layout_height="@dimen/book_image_list_height"/>
+    <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/color_ffffff" android:id="@+id/share_detail_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+    <TextView android:textSize="13.3sp" android:textColor="@color/color_ffffff" android:ellipsize="end" android:id="@+id/share_detail_desc_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:maxLines="3" android:minLines="2" android:layout_marginStart="30dp" android:layout_marginEnd="30dp"/>
+    <ImageView android:id="@+id/share_detail_qrcode_iv" android:layout_width="150dp" android:layout_height="150dp" android:layout_marginTop="15dp" android:layout_marginStart="10dp"/>
+</LinearLayout>
