@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#fff7f7f7" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.biquge.ebook.app.ui.webread.view.WebBookDirLayout android:id="@id/a_z" android:layout_width="300.0dip" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:layout_gravity="end|bottom|center" android:orientation="vertical" android:id="@id/l1" android:background="@drawable/be" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginBottom="60.0dip" android:layout_marginEnd="20.0dip">
+        <ImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/gu" />
+        <TextView android:textSize="8.0sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/en" />
+    </LinearLayout>
+</FrameLayout>

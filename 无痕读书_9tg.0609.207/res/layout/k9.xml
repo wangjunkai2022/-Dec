@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:background="@color/colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.shizhefei.view.indicator.ScrollIndicatorView android:id="@id/aao" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" />
+        </FrameLayout>
+        <com.shizhefei.view.viewpager.SViewPager android:id="@id/aav" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <View android:id="@id/kx" android:background="#60000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/a_i" android:background="@drawable/shape_web_search_bg" android:padding="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gc" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/aad" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/k_" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="10.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/color_000000" android:id="@id/aae" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ya" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/color_999999" android:id="@id/aah" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/yc" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textColor="#ff7091d6" android:gravity="center" android:layout_gravity="center" android:id="@id/gb" android:background="@drawable/cl" android:paddingLeft="25.0dip" android:paddingTop="5.0dip" android:paddingRight="25.0dip" android:paddingBottom="5.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tv" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+        </LinearLayout>
+        <com.biquge.ebook.app.ui.view.SlideRecyclerView android:id="@id/a_j" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/ga" android:layout_width="wrap_content" android:layout_height="40.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="#ff7091d6" android:gravity="center" android:layout_gravity="center" android:id="@id/g_" android:background="@drawable/cl" android:paddingLeft="25.0dip" android:paddingTop="5.0dip" android:paddingRight="25.0dip" android:paddingBottom="5.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:text="@string/tw" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_666666" android:layout_gravity="center" android:id="@id/gd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/y0" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

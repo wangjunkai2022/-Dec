@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/a_9" android:layout_width="1000.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.biquge.ebook.app.widget.StatusBarView android:id="@id/ze" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/zf" android:layout_width="210.0dip" android:layout_height="160.0dip" android:src="@drawable/et" />
+</LinearLayout>

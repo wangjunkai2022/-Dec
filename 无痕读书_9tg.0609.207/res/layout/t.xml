@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffe4e0d8" android:fitsSystemWindows="true" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fancy="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/a0f" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="50.0dip" android:layout_height="wrap_content" android:src="@drawable/gj" android:scaleType="center" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:text="@string/c4" />
+        <ImageView android:layout_gravity="end" android:id="@id/a0h" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="50.0dip" android:layout_height="wrap_content" android:src="@drawable/in" android:scaleType="center" />
+    </FrameLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.google.android.material.appbar.AppBarLayout android:background="@color/color_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" fancy:elevation="0.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" fancy:layout_scrollFlags="a2h">
+                <com.biquge.ebook.app.ad.ads.AdViewRectangle android:id="@id/db" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="vertical" android:id="@id/g6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:background="#ffcdc5b8" style="@style/sc" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/qf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+                    <ImageView android:id="@id/qe" android:layout_width="fill_parent" android:layout_height="170.0dip" android:layout_marginTop="5.0dip" android:scaleType="centerCrop" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+                    <TextView android:textSize="13.0sp" android:textColor="#ff555555" android:id="@id/qd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:singleLine="true" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+                </LinearLayout>
+                <RelativeLayout android:background="#ffcdc5b8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="3.0dip">
+                    <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:paddingLeft="10.0dip" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/c9" android:layout_centerVertical="true" />
+                    <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:id="@id/a0g" android:paddingLeft="10.0dip" android:paddingTop="2.0dip" android:paddingRight="10.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tu" android:drawableRight="@drawable/fq" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/g8" android:padding="5.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" fancy:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.biquge.ebook.app.widget.fancybuttons.FancyButton android:id="@id/g2" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="30.0dip" android:layout_weight="1.0" fancy:ci="#ff938278" fancy:cm="#fff8f8f8" fancy:cy="5.0dip" fancy:d3="@string/c1" fancy:d5="#ffffffff" fancy:d9="13.0sp" />
+        <com.biquge.ebook.app.widget.fancybuttons.FancyButton android:id="@id/g1" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="20.0dip" android:layout_weight="1.0" fancy:ci="#ff938278" fancy:cm="#fff8f8f8" fancy:cy="5.0dip" fancy:d3="@string/ax" fancy:d5="#ffffffff" fancy:d9="13.0sp" />
+    </LinearLayout>
+</LinearLayout>

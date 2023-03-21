@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/c3" layout="@layout/e9" />
+    <com.chanven.lib.cptr.PtrClassicFrameLayout android:id="@id/a1_" android:layout_width="fill_parent" android:layout_height="fill_parent" cube_ptr:hz="100" cube_ptr:i0="1000" cube_ptr:i2="true" cube_ptr:i3="false" cube_ptr:i4="1.0" cube_ptr:i5="3.5" xmlns:cube_ptr="http://schemas.android.com/apk/res-auto">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/a21" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.chanven.lib.cptr.PtrClassicFrameLayout>
+</LinearLayout>

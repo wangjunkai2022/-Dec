@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/main_bg_color" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.biquge.ebook.app.ui.webread.view.WebBookDirLayout android:id="@id/a_z" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

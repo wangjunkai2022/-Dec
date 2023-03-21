@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/color_F8F8F8" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+    <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="5.0dip">
+        <com.manhua.ui.widget.TitleFontTextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/h6" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/j9" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gq" />
+    </FrameLayout>
+    <View style="@style/sc" />
+    <com.tr.comment.sdk.view.TrTopCommentView android:id="@id/j_" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

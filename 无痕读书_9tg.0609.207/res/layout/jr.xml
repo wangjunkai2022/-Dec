@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/ds"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/f9" android:layout_gravity="center_vertical" android:id="@id/cb" android:layout_width="fill_parent" android:layout_height="wrap_content" app:contentInsetLeft="0.0dip" app:contentInsetStart="0.0dip" app:theme="@style/f9" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/color_ffffff" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/ca" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:drawablePadding="3.0dip" android:layout_marginStart="70.0dip" android:layout_marginEnd="70.0dip" />
+    <ViewStub android:layout_gravity="center" android:id="@id/a6l" android:layout="@layout/js" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+</FrameLayout>

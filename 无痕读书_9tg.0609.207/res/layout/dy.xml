@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/e6" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/pt" android:background="@color/color_F8F8F8" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+    <RelativeLayout android:id="@id/ps" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@id/xn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bc" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/color_666666" android:gravity="center_vertical" android:id="@id/xm" android:background="@drawable/simple_bg_selector" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bb" android:drawableLeft="@drawable/gv" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ViewStub android:id="@id/qa" android:layout="@layout/g_" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/qc" android:layout="@layout/g_" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/qb" android:layout="@layout/g_" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

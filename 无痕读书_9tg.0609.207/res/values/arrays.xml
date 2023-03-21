@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="a">
+        <item>淫秽色情</item>
+        <item>营销广告</item>
+        <item>恶意谩骂</item>
+        <item>违法信息</item>
+        <item>虚假谣言</item>
+        <item>不想看到此评论</item>
+    </string-array>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/tr_sdk_comment_2e2e2e" android:id="@id/a7_" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:lineSpacingExtra="3.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/tr_sdk_comment_8290AF" android:layout_gravity="bottom|center|right" android:id="@id/a7a" android:background="@color/tr_sdk_comment_day_bg" android:paddingTop="5.0dip" android:paddingBottom="2.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全文" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+</merge>

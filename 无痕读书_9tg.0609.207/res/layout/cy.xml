@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/me" android:layout_width="73.0dip" android:layout_height="fill_parent" />
+    <View android:layout_width="1.0dip" style="@style/sf" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.shizhefei.view.indicator.ScrollIndicatorView android:id="@id/gp" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_weight="1.0" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@id/a6h" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pa" android:drawableEnd="@drawable/g_" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" />
+            </LinearLayout>
+            <com.chanven.lib.cptr.PtrClassicFrameLayout android:id="@id/a1_" android:layout_width="fill_parent" android:layout_height="fill_parent" cube_ptr:hz="100" cube_ptr:i0="1000" cube_ptr:i2="true" cube_ptr:i3="false" cube_ptr:i4="1.0" cube_ptr:i5="3.5" xmlns:cube_ptr="http://schemas.android.com/apk/res-auto">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/a21" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </com.chanven.lib.cptr.PtrClassicFrameLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@id/yq" android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/yr" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

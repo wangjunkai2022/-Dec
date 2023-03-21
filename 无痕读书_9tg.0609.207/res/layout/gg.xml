@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.biquge.ebook.app.widget.SwipeItemLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/uu" layout="@layout/eo" />
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_ffffff" android:gravity="center" android:layout_gravity="right" android:id="@id/us" android:background="@color/color_F56C6C" android:layout_width="60.0dip" android:layout_height="fill_parent" android:text="@string/j8" />
+    </LinearLayout>
+</com.biquge.ebook.app.widget.SwipeItemLayout>

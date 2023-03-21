@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_F8F8F8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/a33" layout="@layout/e9" />
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/a33">
+        <LinearLayout android:orientation="vertical" android:paddingTop="5.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="5.0dip" android:paddingEnd="5.0dip">
+            <FrameLayout android:id="@id/a34" android:background="@drawable/simple_item_bg_selector" android:paddingLeft="10.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="@dimen/a0" android:textColor="@color/color_333333" android:gravity="center_vertical" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sd" android:drawableLeft="@drawable/hy" android:drawablePadding="10.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/color_666666" android:layout_gravity="center|right" android:id="@id/a3g" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="V89" android:drawableRight="@drawable/g2" android:drawablePadding="10.0dip" />
+            </FrameLayout>
+            <TextView android:id="@id/o0" android:layout_marginTop="8.0dip" android:text="@string/jl" android:drawableLeft="@drawable/i4" android:drawableRight="@drawable/g2" style="@style/ff" />
+            <View style="@style/se" />
+            <TextView android:id="@id/a36" android:text="@string/sc" android:drawableLeft="@drawable/i9" android:drawableRight="@drawable/g2" style="@style/ff" />
+            <View style="@style/se" />
+            <TextView android:id="@id/a32" android:paddingLeft="13.0dip" android:text="@string/s7" android:drawableLeft="@drawable/i7" android:drawableRight="@drawable/g2" style="@style/ff" />
+            <RelativeLayout android:id="@id/bm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <TextView android:paddingLeft="13.0dip" android:text="@string/sb" android:drawableLeft="@drawable/hs" android:drawableRight="@drawable/g2" style="@style/ff" />
+                <com.biquge.ebook.app.widget.SwitchButton android:id="@id/gz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:ir="@color/colorAccent" />
+            </RelativeLayout>
+            <View style="@style/se" />
+            <TextView android:id="@id/a3_" android:text="@string/t5" android:drawableLeft="@drawable/ia" android:drawableRight="@drawable/g2" style="@style/ff" />
+            <View style="@style/se" />
+            <TextView android:id="@id/o1" android:text="@string/m" android:drawableLeft="@drawable/lm_night" android:drawableRight="@drawable/g2" style="@style/ff" />
+            <FrameLayout android:id="@id/hs" android:background="@drawable/simple_item_bg_selector" android:paddingLeft="10.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="8.0dip">
+                <TextView android:textSize="@dimen/a0" android:textColor="@color/color_333333" android:gravity="center_vertical" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/s9" android:drawableLeft="@drawable/hz" android:drawablePadding="10.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/color_666666" android:layout_gravity="center|right" android:id="@id/a37" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0K" android:drawableRight="@drawable/g2" android:drawablePadding="10.0dip" />
+            </FrameLayout>
+            <View style="@style/se" />
+            <FrameLayout android:id="@id/ht" android:background="@drawable/simple_item_bg_selector" android:paddingLeft="12.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="@dimen/a0" android:textColor="@color/color_333333" android:gravity="center_vertical" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/s_" android:drawableLeft="@drawable/i0" android:drawablePadding="15.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/color_666666" android:layout_gravity="center|right" android:id="@id/a38" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0K" android:drawableRight="@drawable/g2" android:drawablePadding="10.0dip" />
+            </FrameLayout>
+            <TextView android:id="@id/hu" android:layout_marginTop="8.0dip" android:text="@string/sa" android:drawableLeft="@drawable/i1" android:drawableRight="@drawable/g2" style="@style/ff" />
+            <TextView android:id="@id/a35" android:visibility="gone" android:layout_marginTop="8.0dip" android:text="跳转清除app缓存，-测试包才会出现" android:drawableRight="@drawable/g2" style="@style/ff" />
+            <TextView android:id="@id/a3h" android:visibility="gone" android:layout_marginTop="8.0dip" android:text="测试页面，-测试包才会出现" android:drawableRight="@drawable/g2" style="@style/ff" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <ViewStub android:id="@id/a1s" android:visibility="gone" android:layout="@layout/el" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

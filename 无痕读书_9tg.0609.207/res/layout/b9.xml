@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/d_" android:background="#05000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="center|right" android:id="@id/da" android:visibility="gone" android:clickable="true" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/j1" android:scaleType="center" />
+</merge>

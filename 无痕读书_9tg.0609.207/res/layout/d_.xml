@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/nd" android:background="@color/colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.biquge.ebook.app.widget.StatusBarView android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/ds">
+            <ImageView android:id="@id/g4" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/gw" android:paddingStart="18.0dip" android:paddingEnd="15.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/g3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/jm" android:paddingStart="18.0dip" android:paddingEnd="15.0dip" />
+            <com.biquge.ebook.app.widget.TitleIndicatorView android:id="@id/a6l" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/mq" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/fr" android:layout_alignParentRight="true" android:paddingStart="15.0dip" android:paddingEnd="18.0dip" />
+        </RelativeLayout>
+        <com.biquge.ebook.app.widget.TopMsgView android:id="@id/pb" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/nd">
+        <LinearLayout android:orientation="vertical" android:id="@id/de" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.shizhefei.view.viewpager.SViewPager android:id="@id/ms" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <ViewStub android:id="@id/na" android:layout="@layout/dw" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="35.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <ViewStub android:id="@id/p5" android:layout="@layout/dx" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/nd" />
+</RelativeLayout>

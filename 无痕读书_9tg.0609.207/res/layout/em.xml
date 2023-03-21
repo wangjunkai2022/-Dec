@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.shizhefei.view.indicator.FixedIndicatorView android:layout_gravity="center" android:id="@id/mp" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="130.0dip" android:layout_height="35.0dip" />
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/nf" android:layout_width="wrap_content" android:layout_height="33.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="@drawable/selector_bookcity_tab_txt" android:gravity="center" android:id="@id/ng" android:background="@drawable/b2" android:layout_width="75.0dip" android:layout_height="fill_parent" android:text="@string/gy" />
+        <TextView android:textSize="13.0sp" android:textColor="@drawable/selector_bookcity_tab_txt" android:gravity="center" android:id="@id/nh" android:background="@drawable/b3" android:layout_width="75.0dip" android:layout_height="fill_parent" android:text="@string/nt" android:layout_marginStart="-0.5dip" android:layout_marginEnd="-0.5dip" />
+        <TextView android:textSize="13.0sp" android:textColor="@drawable/selector_bookcity_tab_txt" android:gravity="center" android:id="@id/ni" android:background="@drawable/b4" android:layout_width="75.0dip" android:layout_height="fill_parent" android:text="@string/f2" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/color_ffffff" android:layout_gravity="center" android:id="@id/mr" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iz" />
+</merge>

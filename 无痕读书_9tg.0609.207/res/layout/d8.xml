@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_bg_color" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.biquge.ebook.app.widget.StatusBarView android:background="@color/colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="@dimen/ds">
+        <ImageView android:id="@id/a98" android:layout_width="50.0dip" android:layout_height="fill_parent" android:src="@drawable/f8" android:scaleType="center" />
+        <com.biquge.ebook.app.widget.ClearEditText android:textSize="14.0sp" android:textColor="@color/color_666666" android:textColorHint="@color/color_999999" android:id="@id/a2s" android:background="@drawable/c9" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="33.0dip" android:hint="@string/s1" android:singleLine="true" android:drawablePadding="2.0dip" android:layout_weight="1.0" android:imeOptions="actionSearch" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/a2n" android:layout_width="50.0dip" android:layout_height="50.0dip" android:text="@string/s5" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.core.widget.NestedScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:background="@color/color_F8F8F8" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+                <RelativeLayout android:paddingLeft="10.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vu" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:gravity="center_vertical" android:background="@drawable/simple_bg_selector" android:paddingLeft="10.0dip" android:paddingTop="6.0dip" android:paddingRight="10.0dip" android:paddingBottom="6.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bb" android:drawableLeft="@drawable/gv" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <com.google.android.flexbox.FlexboxLayout android:id="@id/no" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" app:c="stretch" app:da="a1y" app:db="abg" app:e6="m0" app:fi="1.5" />
+                <com.biquge.ebook.app.ad.ads.AdViewRectangle android:id="@id/db" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <RelativeLayout android:paddingLeft="10.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/s4" android:layout_centerVertical="true" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/color_999999" android:id="@id/nj" android:background="@drawable/simple_bg_selector" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rr" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <com.google.android.flexbox.FlexboxLayout android:id="@id/a2o" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:c="stretch" app:da="a1y" app:db="abg" app:e6="m0" app:fi="1.5" />
+                <ViewStub android:id="@id/xo" android:layout="@layout/dy" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <com.biquge.ebook.app.ui.webread.view.WebSearchResultLayout android:id="@id/aag" android:background="@color/color_F8F8F8" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/a2l" android:background="@color/main_bg_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/a2m" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

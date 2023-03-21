@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="50.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="right" android:id="@id/a3p" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hh" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/shape_dialog_tips_bg" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <ImageView android:layout_width="fill_parent" android:layout_height="130.0dip" android:layout_marginTop="-3.0dip" android:src="@drawable/kf" android:scaleType="fitXY" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:layout_gravity="center_horizontal" android:id="@id/nw" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xq" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/a43" android:background="@drawable/cm" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/x8" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_3f9d25" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/a44" android:background="@drawable/cn" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/n0" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+    </LinearLayout>
+</LinearLayout>

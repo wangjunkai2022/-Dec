@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" app:cardCornerRadius="5.0dip" app:cardPreventCornerOverlap="true" app:cardUseCompatPadding="true" app:elevation="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <ImageView android:id="@id/r2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/color_ffffff" android:id="@id/r3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:lines="1" android:layout_marginStart="6.0dip" android:layout_marginEnd="6.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/color_ffffff" android:layout_gravity="bottom" android:id="@id/r1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:lines="1" android:layout_marginStart="6.0dip" android:layout_marginEnd="6.0dip" />
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

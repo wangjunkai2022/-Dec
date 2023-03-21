@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ap" android:id="@id/w3" android:title="@string/ld" />
+    <item android:icon="@drawable/aq" android:id="@id/w5" android:title="@string/l5" />
+    <item android:icon="@drawable/al" android:id="@id/w2" android:title="@string/l6" />
+    <item android:icon="@drawable/am" android:id="@id/w6" android:title="@string/la" />
+    <item android:icon="@drawable/an" android:id="@id/w4" android:title="@string/lb" />
+</menu>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/color_666666" android:id="@id/zu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_marginStart="15.0dip" />
+    <ImageView android:layout_gravity="center" android:id="@id/zt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fj" android:layout_toLeftOf="@id/zu" android:layout_centerVertical="true" />
+    <com.biquge.ebook.app.widget.AppProgressBar android:id="@id/zv" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_toLeftOf="@id/zu" android:layout_centerVertical="true" />
+</RelativeLayout>

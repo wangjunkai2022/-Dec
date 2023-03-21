@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/aaj" android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content" app:expanded="false" app:layout_behavior="com.biquge.ebook.app.widget.browse.nested.NestedWebHeardBehavior">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="a2h">
+            <TextView android:textSize="11.0sp" android:textColor="@color/color_999999" android:ellipsize="end" android:id="@id/aaf" android:background="#08000000" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.biquge.ebook.app.widget.browse.ProgressBarWebView android:id="@id/cx" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" app:layout_behavior="@string/appbar_scrolling_view_behavior" style="@style/fq" />
+    <com.biquge.ebook.app.widget.browse.IndeterminateProgressBar android:id="@id/aai" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/fq" />
+    <com.biquge.ebook.app.ui.webread.view.WebLoadingView android:id="@id/a_y" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/cw" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

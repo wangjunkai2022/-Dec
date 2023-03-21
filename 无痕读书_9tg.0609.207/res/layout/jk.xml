@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bf" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.biquge.ebook.app.widget.RoundBgView android:layout_gravity="center" android:id="@id/q_" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0dip" />
+    <ImageView android:layout_gravity="center" android:id="@id/q9" android:visibility="gone" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/e0" />
+</FrameLayout>

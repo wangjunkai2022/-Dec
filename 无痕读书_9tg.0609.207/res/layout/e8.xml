@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/a_9" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.biquge.ebook.app.widget.StatusBarView android:id="@id/ze" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/zd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/em" android:layout_below="@id/ze" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/zc" android:visibility="gone" android:layout_width="200.0dip" android:layout_height="wrap_content" android:src="@drawable/ek" android:layout_below="@id/ze" />
+</RelativeLayout>

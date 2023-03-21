@@ -1,0 +1,13 @@
+package com.bytedance.msdk.api.v2.ad.splash;
+
+import androidx.annotation.NonNull;
+import com.bytedance.msdk.api.AdError;
+/* loaded from: classes8.dex */
+public interface GMSplashAdLoadCallback {
+    @Deprecated
+    void onAdLoadTimeout();
+
+    void onSplashAdLoadFail(@NonNull AdError adError);
+
+    void onSplashAdLoadSuccess();
+}

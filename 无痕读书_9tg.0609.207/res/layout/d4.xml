@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/main_bg_color" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:id="@id/b_" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <View android:id="@id/ba" android:background="@color/color_333333" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="10.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" style="@style/sf" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:id="@id/bb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:layout_gravity="bottom" android:id="@id/b0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            <View android:background="@color/color_333333" android:layout_width="1.0dip" android:layout_height="10.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" style="@style/sf" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/b8" android:background="@drawable/cc" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:id="@id/b9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <com.biquge.ebook.app.widget.StarBarView android:id="@id/b7" android:layout_width="wrap_content" android:layout_height="22.0dip" android:layout_marginStart="10.0dip" app:jy="5" app:jz="2.5dip" app:k0="@drawable/fp" app:k1="@drawable/fo" app:k2="11.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:id="@id/b5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:layout_gravity="bottom" android:id="@id/b4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="5.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bo" android:singleLine="true" />
+            <com.biquge.ebook.app.widget.ExpandableTextView android:id="@id/ea" android:layout_width="fill_parent" android:layout_height="wrap_content" expandableTextView:h1="3" xmlns:expandableTextView="http://schemas.android.com/apk/res-auto">
+                <TextView android:textSize="13.0sp" android:textColor="@color/color_999999" android:id="@id/lp" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ImageButton android:layout_gravity="bottom|center|right" android:id="@id/lo" android:background="@color/main_bg_color" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </com.biquge.ebook.app.widget.ExpandableTextView>
+        </LinearLayout>
+        <com.biquge.ebook.app.ad.ads.AdViewRectangle android:id="@id/db" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.biquge.ebook.app.ui.view.TopCommentLayout android:id="@id/di" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/e7" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="5.0dip" android:paddingEnd="5.0dip">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.manhua.ui.widget.TitleFontTextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" android:text="@string/g1" android:layout_marginStart="10.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/color_666666" android:gravity="center_vertical" android:layout_gravity="end|center" android:id="@id/ed" android:background="@drawable/simple_bg_selector" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bb" android:drawablePadding="2.0dip" android:drawableEnd="@drawable/gv" />
+            </FrameLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/e8" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ee" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="5.0dip" android:paddingEnd="5.0dip">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.manhua.ui.widget.TitleFontTextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/color_666666" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="13.0dip" android:text="@string/g2" android:layout_marginStart="10.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/color_666666" android:gravity="center_vertical" android:layout_gravity="end|center" android:id="@id/eb" android:background="@drawable/simple_bg_selector" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bb" android:drawablePadding="2.0dip" android:drawableEnd="@drawable/gv" />
+            </FrameLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/ec" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

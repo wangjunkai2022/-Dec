@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tr.comment.sdk.commons.widget.view.TrDayNightTextView android:textSize="15.0sp" android:textColor="@color/tr_sdk_comment_2e2e2e" android:layout_gravity="center_vertical" android:id="@id/a7m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/uq" />
+    <com.tr.comment.sdk.commons.widget.TrSortChangeView android:layout_gravity="center|right" android:id="@id/a7l" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

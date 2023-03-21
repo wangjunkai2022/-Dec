@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/main_bg_color" android:paddingBottom="100.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/h3" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@id/a_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="该资源因为版权原因，暂不支持阅读！" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="尊重网络小说/漫画版权，我方已删除该资源！" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="敬请谅解" />
+</LinearLayout>

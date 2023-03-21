@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.biquge.ebook.app.ui.book.view.ReadBookLayout android:id="@id/a0b" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.manhua.ui.widget.ComicReaderViewpager android:id="@id/a0e" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.manhua.ui.widget.ZoomRecyclerView android:id="@id/a0c" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.biquge.ebook.app.ui.book.view.ReadBookLayout>
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="200.0dip">
+        <com.manhua.ui.widget.ComicPageTitleView android:textSize="12.0sp" android:textColor="@color/color_ffffff" android:layout_gravity="bottom|center|right" android:id="@id/a0_" android:background="@drawable/bi" android:paddingLeft="10.0dip" android:paddingTop="2.0dip" android:paddingRight="10.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.biquge.ebook.app.ad.ads.AdViewBanner android:layout_gravity="center_horizontal" android:id="@id/d9" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.manhua.ui.widget.ComicReadMenuView android:id="@id/a05" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/a06" android:layout="@layout/eg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.manhua.ui.widget.PublicLoadingView android:id="@id/vg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/a0a" android:layout="@layout/e4" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/ji" android:layout="@layout/e6" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/md" android:layout="@layout/e_" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/dp" android:layout="@layout/dx" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/ix" android:background="#65000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

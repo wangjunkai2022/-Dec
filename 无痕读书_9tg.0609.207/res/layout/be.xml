@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.biquge.ebook.app.widget.AppProgressBar android:id="@id/i1" android:layout_width="35.0dip" android:layout_height="35.0dip" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:ellipsize="end" android:id="@id/a97" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="5.0dip" android:paddingEnd="14.0dip" />
+</LinearLayout>

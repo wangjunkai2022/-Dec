@@ -1,0 +1,25 @@
+.class public interface abstract Lcom/bytedance/msdk/adapter/ThirdSdkInit$InitCallback;
+.super Ljava/lang/Object;
+.source "ThirdSdkInit.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/bytedance/msdk/adapter/ThirdSdkInit;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "InitCallback"
+.end annotation
+
+.annotation runtime Ljava/lang/Deprecated;
+.end annotation
+
+
+# virtual methods
+.method public abstract fail(ILjava/lang/String;)V
+.end method
+
+.method public abstract success()V
+.end method

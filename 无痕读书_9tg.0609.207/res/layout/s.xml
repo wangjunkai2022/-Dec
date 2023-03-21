@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.biquge.ebook.app.ui.book.view.ReadBookLayout android:id="@id/a0b" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.manhua.ui.widget.ComicReaderViewpager android:id="@id/a0e" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/a0d" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.biquge.ebook.app.widget.BookTitleTextView android:id="@id/ep" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+            <com.manhua.ui.widget.PageRecyclerView android:id="@id/a0c" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <com.biquge.ebook.app.widget.BookPageTextView android:id="@id/g0" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+        </LinearLayout>
+    </com.biquge.ebook.app.ui.book.view.ReadBookLayout>
+    <ViewStub android:id="@id/a11" android:layout="@layout/ej" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/a1w" android:layout="@layout/ed" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.biquge.ebook.app.ad.ads.AdViewBanner android:layout_gravity="bottom|center" android:id="@id/d9" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.manhua.ui.widget.PublicLoadingView android:id="@id/g7" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.biquge.ebook.app.ui.book.NewBookReadMenuView android:id="@id/a05" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/a0a" android:layout="@layout/e4" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/a06" android:layout="@layout/eg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/ji" android:layout="@layout/e6" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/md" android:layout="@layout/e_" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/dp" android:layout="@layout/dx" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/el" android:background="#10000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

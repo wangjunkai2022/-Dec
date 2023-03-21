@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="23" android:compileSdkVersionCodename="6.0-2438415" package="kimi.wuhends.ebooks" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <permission android:name="kimi.wuhends.ebooks.openadsdk.permission.TT_PANGOLIN" android:protectionLevel="signature"/>
+    <uses-permission android:name="kimi.wuhends.ebooks.openadsdk.permission.TT_PANGOLIN"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="freemme.permission.msa"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:maxAspectRatio="2.4" android:name="com.biquge.ebook.app.app.AppContext" android:networkSecurityConfig="@xml/c" android:requestLegacyExternalStorage="true" android:resizeableActivity="true" android:roundIcon="@mipmap/c" android:supportsRtl="true" android:theme="@style/i" android:usesCleartextTraffic="true">
+        <meta-data android:name="android.max_aspect" android:value="2.4"/>
+        <meta-data android:name="android.min_aspect" android:value="1.0"/>
+        <meta-data android:name="android.notch_support" android:value="true"/>
+        <meta-data android:name="EasyGoClient" android:value="true"/>
+        <meta-data android:name="android.allow_multiple_resumed_activities" android:value="true"/>
+        <meta-data android:name="notch.config" android:value="portrait|landscape"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.biquge.ebook.app.ui.activity.WelComeActivity" android:screenOrientation="portrait" android:theme="@style/m">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:launchMode="singleTask" android:name="com.biquge.ebook.app.ui.activity.MainActivity" android:screenOrientation="portrait" android:theme="@style/k" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.RankListWeekActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.FragmentManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.BookListCategoryActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.BookStoreModuleMoreActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.CreateBookGroupActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.BookGroupDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.BookDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.BookListDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.CreateBookListActivity" android:screenOrientation="portrait" android:theme="@style/j" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.biquge.ebook.app.ui.activity.MyListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.AddBookFromShelfActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.BookSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.ExternalSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.WantReadBookActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.WantProgressActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.biquge.ebook.app.ui.activity.UploadBookActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.SetActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.FeedBackActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.AbountActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.SetNickNameActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.ClipImageActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.SkinActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.RegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.RetrievePasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.ChangePhoneActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.ForgetPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.SecurityCenterActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.MessageCodeLoginActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.CompleteInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.CompleteInfoForeignActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.MyNewsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.DisclaimerActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.MyFootprintActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.MyAccountActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.DownloadTxtListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.CreateTxtDownloadActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.webread.ui.WebReadActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.webread.ui.WebBookDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.webread.ui.WebHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.DownloadManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:hardwareAccelerated="true" android:name="com.biquge.ebook.app.ui.book.NewBookReadActivity" android:screenOrientation="portrait" android:theme="@style/l" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.ChangeSourceActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.book.BookMoreSetActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:launchMode="singleTask" android:name="com.biquge.ebook.app.ui.book.BookReadEndActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.BookNovelDirActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.WebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.UserServiceWebviewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.ImportFileActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.SelectFileActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.WifiBookActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.DeviceActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.TestActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.biquge.ebook.app.ui.activity.ToforegroundActivity" android:screenOrientation="portrait" android:theme="@style/m"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:launchMode="singleTop" android:name="com.biquge.ebook.app.ui.activity.RewardVideoActivity" android:screenOrientation="portrait"/>
+        <receiver android:enabled="true" android:name="com.biquge.ebook.app.receiver.BatteryReceiver"/>
+        <receiver android:enabled="true" android:name="com.biquge.ebook.app.receiver.RemoteReceiver"/>
+        <receiver android:name="com.biquge.ebook.app.receiver.PkgReceiver"/>
+        <service android:name="com.biquge.ebook.app.app.AppService"/>
+        <service android:name="com.biquge.ebook.app.app.BaiDuVoiceService"/>
+        <provider android:authorities="kimi.wuhends.ebooks.MyContentProvider" android:exported="true" android:grantUriPermissions="true" android:name="com.biquge.ebook.app.provider.MyContentProvider"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:hardwareAccelerated="true" android:name="com.manhua.ui.activity.ComicReadActivity" android:screenOrientation="portrait" android:theme="@style/l" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.manhua.ui.activity.ComicRankActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.manhua.ui.activity.ComicCategoryActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.manhua.ui.activity.ComicStoreModuleMoreActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.manhua.ui.activity.ComicListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.manhua.ui.activity.ComicUpdateActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.manhua.ui.activity.ComicNewReleaseActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.manhua.ui.activity.ComicListCategoryActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.manhua.ui.activity.ComicListDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.manhua.ui.activity.ComicRankListWeekActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.manhua.ui.activity.ComicDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.manhua.ui.activity.ComicGroupDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.manhua.ui.activity.CreateComicGroupActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.manhua.ui.activity.ComicNovelDirActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.manhua.ui.activity.ComicReadEndActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.manhua.ui.activity.CreateComicListActivity" android:screenOrientation="portrait" android:theme="@style/j" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.manhua.ui.activity.AddComicFromShelfActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.expand.videoplayer.ui.PlayWebViewActivity" android:screenOrientation="portrait"/>
+        <provider android:authorities="kimi.wuhends.ebooks.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/a"/>
+        </provider>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.tr.comment.sdk.activity.TrCommentActivity" android:screenOrientation="portrait"/>
+        <provider android:authorities="kimi.wuhends.ebooks.TTFileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.bytedance.sdk.openadsdk.TTFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/i"/>
+        </provider>
+        <provider android:authorities="kimi.wuhends.ebooks.TTMultiProvider" android:exported="false" android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"/>
+        <provider android:authorities="kimi.wuhends.ebooks.gdt.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.qq.e.comm.GDTFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/b"/>
+        </provider>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:multiprocess="true" android:name="com.qq.e.ads.PortraitADActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:multiprocess="true" android:name="com.qq.e.ads.LandscapeADActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <service android:exported="false" android:multiprocess="true" android:name="com.qq.e.comm.DownloadService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:multiprocess="true" android:name="com.qq.e.ads.ADActivity"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <activity android:name="com.bytedance.msdk.api.activity.TTDelegateActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.bytedance.mapplog.collector.Collector"/>
+        <service android:name="com.bytedance.adsdk.demo.overseaslog.BinderPoolService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:multiprocess="true" android:name="com.qq.e.ads.RewardvideoPortraitADActivity" android:theme="@android:style/Theme.Light.NoTitleBar">
+            <meta-data android:name="android.notch_support" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:multiprocess="true" android:name="com.qq.e.ads.RewardvideoLandscapeADActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Light.NoTitleBar">
+            <meta-data android:name="android.notch_support" android:value="true"/>
+        </activity>
+        <activity android:multiprocess="true" android:name="com.qq.e.ads.DialogActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <meta-data android:name="ZEUS_PLUGIN_PANGLE" android:value="{                 apiVersionCode:4607,                 packageName:com.byted.pangle,                 minPluginVersion:4607,                 internalPath:1694131332,                 internalVersionCode:4607,                 signature:'MIIDfTCCAmWgAwIBAgIEfRwYPjANBgkqhkiG9w0BAQsFADBvMQswCQYDVQQGEwJDTjEQMA4GA1UECBMHQmVpamluZzEQMA4GA1UEBxMHQmVpamluZzESMBAGA1UEChMJQnl0ZURhbmNlMQ8wDQYDVQQLEwZQYW5nbGUxFzAVBgNVBAMTDkNodWFuIFNoYW4gSmlhMB4XDTIxMTEwODA2MjQzOVoXDTQ2MTEwMjA2MjQzOVowbzELMAkGA1UEBhMCQ04xEDAOBgNVBAgTB0JlaWppbmcxEDAOBgNVBAcTB0JlaWppbmcxEjAQBgNVBAoTCUJ5dGVEYW5jZTEPMA0GA1UECxMGUGFuZ2xlMRcwFQYDVQQDEw5DaHVhbiBTaGFuIEppYTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAIBKeRL+4mfCn1SLYv6OemfwwItkjlLPyqOEugkV6lanFTcZgLwEl5LIkL0y28UncPtMX1Mii6DzCdJ/plw7S9+RT/hYDneu339IKWojaU2qai/5FokHlQ0MMnYl5yry00ghVPsl1u+03cQA2ZnjIMiFhrBJpQzHt7IYvq2aEEMBcY8uT7iFoBI848e1mL1joVS2z02C3NliP7ZNARkXH+rTQAlCJulT5IZk+V/PTaKqzgNrkhsKh0/tBmU7m8u79x/xpgGsE19H18AgS4P/9/MDCRe2Z35boZeccaUy2MXCwv3djzUcDk3rRzQPYzdpyyRnrFMuhiKesc5VHgUMs9kCAwEAAaMhMB8wHQYDVR0OBBYEFENENrNWGzc2WhxdvhoMDs57U70zMA0GCSqGSIb3DQEBCwUAA4IBAQAHqDCrmvyBBmIGXwuL1rwS/Qv9ZJIZykBIaNMm+H1IfitCl4yXd9N2n+PjE0UZtxZ21UZOt9wAr+RFiSl5YRXqpt7WLARTy4YW3RiQ+wiL7bshzeSYBoSiC427Bfeq0WjwY0/jHlr8uouppyJOz++6U9hrYX2EW/6UjH5XlWiKQJ6b2ZzPcP8Xpg/TJn4tWvXJP6jw9kRRP2GmMttY78leWQst2QEZILmWJubXRLPj9O+qx2uP9oGTD4sc1vb9hzkOHBIHzGaalqLFbbGaeFpLFHoGTsnOfPTwUVKDZYmxbkcmR1bp7eYOW+nSQNMLn0FjDewZl5l37Sa/gz0WVHon'             }"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity_T" android:theme="@android:style/Theme.Translucent" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Landscape_Activity" android:screenOrientation="landscape" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Activity" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_SingleTask_Activity_T" android:theme="@android:style/Theme.Translucent" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_SingleTask_Activity" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <provider android:authorities="kimi.wuhends.ebooks.pangle.servermanager.downloader.com.bytedance.sdk.openadsdk.adhost" android:exported="false" android:name="com.bytedance.sdk.openadsdk.stub.server.DownloaderServerManager" android:process=":downloader"/>
+        <provider android:authorities="kimi.wuhends.ebooks.pangle.servermanager.main" android:exported="false" android:name="com.bytedance.sdk.openadsdk.stub.server.MainServerManager"/>
+        <provider android:authorities="kimi.wuhends.ebooks.pangle.provider.proxy.main" android:exported="false" android:name="com.bytedance.pangle.provider.MainProcessProviderProxy"/>
+        <provider android:authorities="kimi.wuhends.ebooks.pangle.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.bytedance.pangle.FileProvider"/>
+        <activity android:exported="false" android:name="com.ss.android.downloadlib.addownload.compliance.AppPrivacyPolicyActivity"/>
+        <activity android:exported="false" android:name="com.ss.android.downloadlib.addownload.compliance.AppDetailInfoActivity"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.ss.android.downloadlib.activity.TTDelegateActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.ss.android.downloadlib.activity.JumpKllkActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:exported="false" android:name="com.ss.android.downloadlib.core.download.DownloadReceiver"/>
+        <service android:exported="false" android:name="com.ss.android.socialbase.appdownloader.DownloadHandlerService"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.ss.android.socialbase.appdownloader.view.DownloadTaskDeleteActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.ss.android.socialbase.appdownloader.view.JumpUnknownSourceActivity" android:theme="@android:style/Theme.Dialog"/>
+        <service android:enabled="true" android:exported="false" android:name="com.ss.android.socialbase.appdownloader.RetryJobSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService" android:process=":downloader">
+            <intent-filter>
+                <action android:name="com.ss.android.socialbase.downloader.remote"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.ss.android.socialbase.downloader.notification.DownloadNotificationService"/>
+        <service android:exported="false" android:name="com.ss.android.socialbase.downloader.downloader.DownloadService"/>
+        <service android:exported="false" android:name="com.ss.android.socialbase.downloader.impls.DownloadHandleService"/>
+        <service android:exported="false" android:name="com.ss.android.socialbase.downloader.downloader.SqlDownloadCacheService"/>
+    </application>
+</manifest>

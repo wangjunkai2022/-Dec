@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/a6a" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+    <com.biquge.ebook.app.widget.ClearEditText android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/le" android:background="@drawable/bp" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:imeOptions="actionDone" android:textCursorDrawable="@drawable/bq" />
+</FrameLayout>

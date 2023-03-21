@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/main_bg_color" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/a2i" android:background="@color/colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.biquge.ebook.app.widget.StatusBarView android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/ds">
+            <RelativeLayout android:id="@id/a2k" android:layout_width="50.0dip" android:layout_height="fill_parent">
+                <View android:id="@id/a2z" android:layout_width="0.5dip" android:layout_height="0.5dip" android:layout_marginLeft="12.0dip" android:layout_marginBottom="9.0dip" android:layout_alignParentBottom="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/f8" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/a2u" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:drawableRight="@drawable/ft" />
+            <com.biquge.ebook.app.widget.ClearEditText android:textSize="12.0sp" android:textColor="@color/color_666666" android:textColorHint="@color/color_999999" android:gravity="center_vertical" android:id="@id/a2s" android:background="@drawable/c9" android:layout_width="0.0dip" android:layout_height="33.0dip" android:hint="@string/rp" android:singleLine="true" android:drawablePadding="3.0dip" android:layout_weight="1.0" android:imeOptions="actionSearch" android:drawableStart="@drawable/in" android:paddingEnd="5.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/a2n" android:layout_width="50.0dip" android:layout_height="50.0dip" android:text="@string/s5" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/a2y" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <Button android:textSize="14.0sp" android:textColor="@color/main_tab_txt_color" android:gravity="center" android:id="@id/a30" android:background="@drawable/simple_bg_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:text="@string/j4" android:layout_weight="1.0" />
+        <Button android:textSize="14.0sp" android:textColor="@color/main_tab_txt_color" android:gravity="center" android:id="@id/a31" android:background="@drawable/simple_bg_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/kx" android:layout_weight="1.0" />
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/a2y" android:layout_below="@id/a2i">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:background="@color/color_F8F8F8" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+            <RelativeLayout android:paddingLeft="10.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rv" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:gravity="center_vertical" android:id="@id/a2r" android:background="@drawable/simple_bg_selector" android:paddingLeft="10.0dip" android:paddingTop="6.0dip" android:paddingRight="10.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/bb" android:drawableLeft="@drawable/gv" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/a2q" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:background="@color/color_F8F8F8" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+            <com.biquge.ebook.app.ad.ads.AdViewRectangle android:id="@id/dd" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <RelativeLayout android:paddingLeft="10.0dip" android:paddingRight="5.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/color_666666" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/s4" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:id="@id/a2p" android:background="@drawable/simple_bg_selector" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rr" android:layout_alignParentRight="true" />
+                <com.google.android.flexbox.FlexboxLayout android:id="@id/a2o" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/a2p" app:c="stretch" app:da="a1y" app:db="abg" app:e6="m0" app:fi="1.5" />
+            </RelativeLayout>
+            <ViewStub android:id="@id/xo" android:layout="@layout/dy" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/a2v" android:background="@color/main_bg_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/a2y" android:layout_below="@id/a2i">
+        <com.shizhefei.view.indicator.ScrollIndicatorView android:id="@id/a2t" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/a2w" android:background="#12000000" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:gravity="center_vertical" android:id="@id/a2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/s3" />
+        </LinearLayout>
+        <com.chanven.lib.cptr.PtrClassicFrameLayout android:id="@id/a1_" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" cube_ptr:hz="100" cube_ptr:i0="1000" cube_ptr:i2="true" cube_ptr:i3="false" cube_ptr:i4="1.0" cube_ptr:i5="3.5" xmlns:cube_ptr="http://schemas.android.com/apk/res-auto">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/a21" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.chanven.lib.cptr.PtrClassicFrameLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/a2l" android:background="@color/main_bg_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/a2y" android:layout_below="@id/a2i">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/a2m" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</RelativeLayout>

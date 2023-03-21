@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.biquge.ebook.app.widget.HeaderView android:id="@id/a9_" android:background="@color/colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.shizhefei.view.viewpager.SViewPager android:id="@id/xb" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

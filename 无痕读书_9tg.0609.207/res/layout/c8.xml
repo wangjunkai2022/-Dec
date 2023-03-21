@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/om" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/e8" />
+        <TextView android:textSize="20.0sp" android:textColor="#fff7b11b" android:id="@id/j3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/el" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/or" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ea" />
+            <ImageView android:id="@id/oq" android:layout_width="65.0dip" android:layout_height="65.0dip" android:src="@drawable/e7" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/e2" />
+            <ImageView android:id="@id/op" android:layout_width="65.0dip" android:layout_height="65.0dip" android:src="@drawable/e4" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/e1" />
+            <ImageView android:id="@id/os" android:layout_width="65.0dip" android:layout_height="65.0dip" android:src="@drawable/e3" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/oi" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/e9" />
+            <ImageView android:id="@id/oh" android:layout_width="65.0dip" android:layout_height="65.0dip" android:src="@drawable/e5" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/e2" />
+            <ImageView android:id="@id/og" android:layout_width="65.0dip" android:layout_height="65.0dip" android:src="@drawable/e4" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/e_" />
+            <ImageView android:id="@id/oj" android:layout_width="65.0dip" android:layout_height="65.0dip" android:src="@drawable/e6" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

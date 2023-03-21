@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="fr" parent="@style/sk" />
+    <style name="fs" parent="@style/sl" />
+    <style name="sk" parent="@android:style/Theme.Material.NoActionBar" />
+    <style name="sl" parent="@android:style/Theme.Material.Light.NoActionBar" />
+</resources>

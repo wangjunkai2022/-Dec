@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <!-- 数据库名称 -->
+    <dbname value="JW_BOOK_3" />
+
+    <!-- 数据库版本 -->
+    <version value="132" />
+
+    <!-- 数据库表 -->
+    <list>
+        <!-- 保存到书架的对象表 -->
+        <mapping class="com.biquge.ebook.app.bean.CollectBook" />
+        <!-- 小说目录表 -->
+        <mapping class="com.biquge.ebook.app.bean.ChapterBean" />
+        <!-- 书签表 -->
+        <mapping class="com.biquge.ebook.app.bean.BookMark" />
+        <!-- 我的足迹表 -->
+        <mapping class="com.biquge.ebook.app.bean.Footprint" />
+        <!-- 用户表 -->
+        <mapping class="com.biquge.ebook.app.bean.User" />
+        <!-- 下载数据表 -->
+        <mapping class="com.biquge.ebook.app.bean.DownloadBean" />
+        <!-- 专门存储缓存错误的数据 -->
+        <mapping class="com.biquge.ebook.app.bean.CacheFailedBean" />
+        <!-- 阅读的背景 -->
+        <mapping class="com.biquge.ebook.app.bean.RedBgImageBean" />
+        <!-- 字体 -->
+        <mapping class="com.biquge.ebook.app.bean.NewReadFont" />
+        <!-- 阅读上下模式滑动记录的 -->
+        <mapping class="com.biquge.ebook.app.bean.ReadPostion" />
+        <!-- 保存阅读进度，不在书架也要保存 -->
+        <mapping class="com.biquge.ebook.app.bean.ReadFootprint" />
+        <!-- 网络请求header头是否有更新的url记录 并且保存缓存数据的 -->
+        <mapping class="com.biquge.ebook.app.bean.CacheBean" />
+        <!-- 创建书单 - 草稿箱 -->
+        <mapping class="com.biquge.ebook.app.bean.CreateBookList" />
+        <!-- 本地的书单 - 已发布和收藏 -->
+        <mapping class="com.biquge.ebook.app.bean.BookElement" />
+        <!-- 新闻通知 现在放在initconf2中 -->
+        <mapping class="com.biquge.ebook.app.bean.InitConfNews" />
+        <!-- TXT下载实体类 -->
+        <mapping class="com.biquge.ebook.app.bean.TaskInfo" />
+        <!-- TXT下载浏览历史和收藏夹类 -->
+        <mapping class="com.biquge.ebook.app.bean.TxtCollect" />
+        <!-- 阅读解锁的bean -->
+        <mapping class="com.biquge.ebook.app.bean.ReadLockBean" />
+        <mapping class="com.manhua.data.bean.ComicReadLockBean" />
+        <mapping class="com.biquge.ebook.app.bean.WebReadLockBean" />
+
+        <!-- 漫画书架对象 -->
+        <mapping class="com.manhua.data.bean.ComicCollectBean" />
+        <!-- 漫画我的足迹 -->
+        <mapping class="com.manhua.data.bean.ComicFootprint" />
+        <!-- 漫画目录对象 -->
+        <mapping class="com.manhua.data.bean.ComicChapterBean" />
+        <!-- 漫画我的足迹 -->
+        <mapping class="com.manhua.data.bean.ComicElement" />
+        <!-- 漫画我的书单草稿 -->
+        <mapping class="com.manhua.data.bean.CreateComicList" />
+        <!-- 漫画缓存下载 -->
+        <mapping class="com.manhua.data.bean.ComicDownloadBean" />
+        <mapping class="com.manhua.data.bean.ComicCacheFailedBean" />
+
+        <!-- 聚合推荐 -->
+        <mapping class="com.biquge.ebook.app.bean.SameTjConfig" />
+        <mapping class="com.biquge.ebook.app.bean.SameTjHistory" />
+
+        <!-- 新裂变分享 -->
+        <mapping class="com.biquge.ebook.app.bean.ShareTgBean" />
+
+        <!-- 下载记录状态 -->
+        <mapping class="com.biquge.ebook.app.bean.DownloadProgress" />
+        <mapping class="com.biquge.ebook.app.bean.BatchCacheBean" />
+
+        <!-- web搜索 -->
+        <!-- web搜索的 分段章节 -->
+        <mapping class="com.biquge.ebook.app.bean.webread.WebSiteRulesBean" />
+        <mapping class="com.biquge.ebook.app.bean.webread.WebChapterBatchBean" />
+
+    </list>
+
+    <!-- 数据库存储目录	external == 外部 	
+    				internal == 内部	-->
+    <storage value="internal" />
+</litepal>

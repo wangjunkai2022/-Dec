@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.shizhefei.view.viewpager.SViewPager android:id="@id/n8" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.biquge.ebook.app.ui.view.ContinueReadLayout android:layout_gravity="bottom" android:id="@id/vy" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+    </FrameLayout>
+    <View style="@style/sc" />
+    <com.biquge.ebook.app.widget.MainBottomNavigationView android:id="@id/c2" android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content" app:itemIconTint="@drawable/selector_txt_main" app:itemTextColor="@drawable/selector_txt_main" app:labelVisibilityMode="labeled" app:menu="@menu/a" />
+</LinearLayout>

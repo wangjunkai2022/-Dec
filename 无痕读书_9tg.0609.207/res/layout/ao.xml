@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.biquge.ebook.app.widget.HeaderView android:id="@id/ce" android:background="@color/colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/a1m" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/a1q" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="30.0dip" android:src="@drawable/ij" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@id/a1r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/r_" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@id/a1p" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/ra" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_ff414c" android:gravity="center" android:id="@id/a1o" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/ra" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/lm" android:background="@drawable/selector_register_bg" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="15.0dip" android:text="@string/j6" />
+        </LinearLayout>
+        <include android:id="@id/a1n" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/bg" />
+    </FrameLayout>
+</LinearLayout>

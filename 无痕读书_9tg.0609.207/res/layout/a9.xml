@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_gravity="bottom|center|right" android:id="@id/cu" android:layout_width="0.5dip" android:layout_height="1.0dip" android:layout_marginBottom="9.0dip" />
+        <include android:id="@id/bo" layout="@layout/e9" />
+    </FrameLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <com.shizhefei.view.indicator.FixedIndicatorView android:id="@id/bp" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ld" android:background="@color/main_bg_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:textSize="14.0sp" android:textColor="@color/main_tab_txt_color" android:gravity="center" android:id="@id/lc" android:background="@drawable/simple_bg_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:text="@string/kw" android:layout_weight="1.0" style="?android:buttonBarButtonStyle" />
+            <Button android:textSize="14.0sp" android:textColor="@color/main_tab_txt_color" android:gravity="center" android:id="@id/la" android:background="@drawable/simple_bg_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/j8" android:layout_weight="1.0" style="?android:buttonBarButtonStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View style="@style/sc" />
+    <com.shizhefei.view.viewpager.SViewPager android:id="@id/bq" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

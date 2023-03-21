@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View style="@style/sc" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingTop="8.0dip" android:paddingRight="10.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="55.0dip">
+        <Button android:textSize="14.0sp" android:textColor="@color/main_tab_txt_color" android:gravity="center" android:id="@id/lc" android:background="@drawable/simple_bg_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:text="@string/kw" android:layout_weight="1.0" />
+        <Button android:textSize="14.0sp" android:textColor="@color/main_tab_txt_color" android:gravity="center" android:id="@id/la" android:background="@drawable/simple_bg_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/j8" android:layout_weight="1.0" />
+        <Button android:textSize="14.0sp" android:textColor="@color/main_tab_txt_color" android:gravity="center" android:id="@id/lb" android:background="@drawable/simple_bg_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/k4" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/main_bg_color" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:paddingBottom="50.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/id" android:background="@color/color_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="a2h|a4b|ln">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_collapseMode="parallax">
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="260.0dip">
+                        <ImageView android:id="@id/ie" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                        <View android:background="@drawable/c_" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    </FrameLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="70.0dip">
+                        <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardCornerRadius="10.0dip" app:cardPreventCornerOverlap="true" app:cardUseCompatPadding="true">
+                            <ImageView android:id="@id/if" android:layout_width="@dimen/n" android:layout_height="@dimen/j" android:scaleType="centerCrop" />
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/color_ffffff" android:ellipsize="end" android:id="@id/b3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+                            <TextView android:textSize="13.0sp" android:textColor="@color/color_ffffff" android:ellipsize="end" android:id="@id/ay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/color_ffffff" android:ellipsize="end" android:id="@id/bc" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+                <androidx.appcompat.widget.Toolbar android:theme="@style/f9" android:layout_width="fill_parent" android:layout_height="wrap_content" app:contentInsetLeft="0.0dip" app:contentInsetStart="0.0dip" app:layout_collapseMode="pin" app:theme="@style/f9">
+                    <LinearLayout android:orientation="vertical" android:id="@id/j4" android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.biquge.ebook.app.widget.StatusBarView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                            <ImageView android:id="@id/e9" android:layout_width="50.0dip" android:layout_height="fill_parent" android:src="@drawable/f8" android:scaleType="center" />
+                            <TextView android:textSize="18.0sp" android:textColor="@color/color_333333" android:ellipsize="end" android:gravity="center" android:id="@id/eg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_weight="1.0" />
+                            <ImageView android:id="@id/ei" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/kj" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/by" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-20.0dip">
+                <com.shizhefei.view.indicator.ScrollIndicatorView android:id="@id/ig" android:paddingBottom="10.0dip" android:layout_width="200.0dip" android:layout_height="55.0dip" />
+                <View style="@style/sd" />
+            </LinearLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.viewpager.widget.ViewPager android:id="@id/ih" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/e_" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="@color/main_tab_txt_color" android:gravity="center" android:id="@id/ax" android:background="@drawable/simple_item_bg_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/v_" android:layout_weight="3.0" />
+        <FrameLayout android:background="@color/colorPrimary" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0">
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/b6" android:background="@drawable/simple_bg_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/c6" />
+        </FrameLayout>
+        <TextView android:textSize="13.0sp" android:textColor="@color/main_tab_txt_color" android:gravity="center" android:id="@id/az" android:background="@drawable/simple_item_bg_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/dy" android:layout_weight="3.0" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:layout_marginBottom="50.0dip" style="@style/sc" />
+    <ViewStub android:id="@id/ji" android:layout="@layout/e6" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/xq" android:layout="@layout/eh" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

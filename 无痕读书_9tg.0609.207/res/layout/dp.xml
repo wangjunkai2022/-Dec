@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.google.android.material.appbar.AppBarLayout android:id="@id/gn" android:background="@color/main_bg_color" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="com.biquge.ebook.app.widget.AppBarLayoutBehavior">
+                <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="a2h|ln">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_collapseMode="parallax">
+                        <com.shizhefei.view.indicator.ScrollIndicatorView android:id="@id/p1" android:layout_width="fill_parent" android:layout_height="43.0dip" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+                        <com.shizhefei.view.indicator.ScrollIndicatorView android:id="@id/p0" android:layout_width="fill_parent" android:layout_height="43.0dip" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+                        <com.shizhefei.view.indicator.ScrollIndicatorView android:id="@id/ox" android:layout_width="fill_parent" android:layout_height="43.0dip" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+                        <com.shizhefei.view.indicator.ScrollIndicatorView android:id="@id/oy" android:layout_width="fill_parent" android:layout_height="43.0dip" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+                        <com.shizhefei.view.indicator.ScrollIndicatorView android:id="@id/p2" android:layout_width="fill_parent" android:layout_height="43.0dip" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+                    </LinearLayout>
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <com.chanven.lib.cptr.PtrClassicFrameLayout android:id="@id/a1_" android:layout_width="fill_parent" android:layout_height="fill_parent" cube_ptr:hz="100" cube_ptr:i0="1000" cube_ptr:i2="true" cube_ptr:i3="false" cube_ptr:i4="1.0" cube_ptr:i5="3.5" xmlns:cube_ptr="http://schemas.android.com/apk/res-auto">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/nn" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </com.chanven.lib.cptr.PtrClassicFrameLayout>
+                <TextView android:textSize="14.0sp" android:textColor="@color/main_tab_txt_color" android:gravity="center" android:id="@id/nl" android:background="@color/color_F8F8F8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+            </FrameLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+    <com.manhua.ui.widget.PublicLoadingView android:id="@id/nm" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

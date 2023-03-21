@@ -1,0 +1,35 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: 无痕读书_9tg.0609.207.apk
+compressionType: false
+doNotCompress:
+- resources.arsc
+- png
+- lib/armeabi-v7a/libshella-4.1.0.31.so
+- lib/armeabi-v7a/libshell-super.2019.so
+- assets/o0oooOO0ooOo.dat
+- assets/hnlhol.dat
+- assets/0OO00l111l1l
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '21'
+  targetSdkVersion: '29'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  androidsupportmultidexversion.txt: '0'
+  tencent_stub: '0'
+  com/jni/crypt/project/META-INF/MANIFEST.MF: '0'
+  okhttp3/internal/publicsuffix/NOTICE: '8'
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: '0'
+  org/htmlcleaner/META-INF/MANIFEST.MF: '0'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.7.0
+versionInfo:
+  versionCode: '207'
+  versionName: 9tg.0609.207

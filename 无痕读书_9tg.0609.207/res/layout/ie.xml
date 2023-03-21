@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <top.defaults.colorpicker.ColorPickerView android:id="@id/i8" android:layout_width="wrap_content" android:layout_height="wrap_content" app:bz="true" />
+    <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/gg" android:background="?android:selectableItemBackground" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="64.0dip" />
+    <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/yh" android:background="?android:selectableItemBackground" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="64.0dip" />
+    <View android:id="@id/i7" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+    <TextView android:gravity="center_horizontal" android:id="@id/i6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginStart="8.0dip" />
+</LinearLayout>

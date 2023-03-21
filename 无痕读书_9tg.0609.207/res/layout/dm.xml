@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_bg_color" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:id="@id/a40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:textIsSelectable="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/a3z" android:background="@drawable/selector_red_semicircle_bg" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_margin="20.0dip" android:text="点击检测" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:id="@id/a42" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:textIsSelectable="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:id="@id/a41" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_marginTop="20.0dip" android:textIsSelectable="true" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

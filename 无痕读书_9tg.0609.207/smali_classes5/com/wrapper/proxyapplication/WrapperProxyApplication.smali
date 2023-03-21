@@ -1,0 +1,262 @@
+.class public abstract Lcom/wrapper/proxyapplication/WrapperProxyApplication;
+.super Landroid/app/Application;
+.source "WrapperProxyApplication.java"
+
+
+# static fields
+.field static baseContext:Landroid/content/Context; = null
+
+.field static className:Ljava/lang/String; = "com.biquge.ebook.app.app.AppContext"
+
+.field static mLoader:Ljava/lang/ClassLoader; = null
+
+.field static shellApp:Landroid/app/Application; = null
+
+.field static tinkerApp:Ljava/lang/String; = "tinker not support"
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    nop
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    .line 18
+    invoke-direct {p0}, Landroid/app/Application;-><init>()V
+
+    nop
+.end method
+
+.method private declared-synchronized Fixappname()Z
+    .locals 2
+
+    monitor-enter p0
+
+    .line 41
+    :try_start_0
+    sget-object v0, Lcom/wrapper/proxyapplication/WrapperProxyApplication;->className:Ljava/lang/String;
+
+    const-string v1, "."
+
+    nop
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 42
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-super {p0}, Landroid/app/Application;->getPackageName()Ljava/lang/String;
+
+    move-result-object v1
+
+    nop
+
+    sget-object v1, Lcom/wrapper/proxyapplication/WrapperProxyApplication;->className:Ljava/lang/String;
+
+    nop
+
+    nop
+
+    move-result-object v0
+
+    sput-object v0, Lcom/wrapper/proxyapplication/WrapperProxyApplication;->className:Ljava/lang/String;
+
+    goto :goto_0
+
+    .line 44
+    :cond_0
+    sget-object v0, Lcom/wrapper/proxyapplication/WrapperProxyApplication;->className:Ljava/lang/String;
+
+    const-string v1, "."
+
+    nop
+
+    move-result v0
+
+    if-gez v0, :cond_1
+
+    .line 45
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-super {p0}, Landroid/app/Application;->getPackageName()Ljava/lang/String;
+
+    move-result-object v1
+
+    nop
+
+    const-string v1, "."
+
+    nop
+
+    sget-object v1, Lcom/wrapper/proxyapplication/WrapperProxyApplication;->className:Ljava/lang/String;
+
+    nop
+
+    nop
+
+    move-result-object v0
+
+    sput-object v0, Lcom/wrapper/proxyapplication/WrapperProxyApplication;->className:Ljava/lang/String;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    :cond_1
+    :goto_0
+    const/4 v0, 0x1
+
+    .line 48
+    monitor-exit p0
+
+    return v0
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
+.end method
+
+.method public static fixAndroid(Landroid/content/Context;Landroid/app/Application;)V
+    .locals 2
+
+    .line 417
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1c
+
+    if-ne v0, v1, :cond_0
+
+    .line 419
+    :try_start_0
+    nop
+
+    move-result-object p0
+
+    .line 422
+    invoke-static {p0, p1}, Lcom/wrapper/proxyapplication/AndroidNClassLoader;->inject(Ljava/lang/ClassLoader;Landroid/app/Application;)Ljava/lang/ClassLoader;
+
+    move-result-object p0
+
+    sput-object p0, Lcom/wrapper/proxyapplication/WrapperProxyApplication;->mLoader:Ljava/lang/ClassLoader;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p0
+
+    .line 426
+    nop
+
+    :cond_0
+    :goto_0
+    nop
+.end method
+
+.method private static getVersionCode(Landroid/content/Context;)Ljava/lang/String;
+    .locals 2
+
+    .line 433
+    :try_start_0
+    nop
+
+    move-result-object v0
+
+    nop
+
+    move-result-object p0
+
+    const/4 v1, 0x0
+
+    nop
+
+    move-result-object p0
+
+    nop
+    :try_end_0
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object p0
+
+    :catch_0
+    move-exception p0
+
+    .line 436
+    nop
+
+    const-string p0, "0"
+
+    return-object p0
+.end method
+
+.method static getWrapperProxyAppBaseContext()Landroid/content/Context;
+    .locals 1
+
+    .line 35
+    sget-object v0, Lcom/wrapper/proxyapplication/WrapperProxyApplication;->baseContext:Landroid/content/Context;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method native Ooo0ooO0oO()V
+.end method
+
+.method protected attachBaseContext(Landroid/content/Context;)V
+    .locals 1
+
+    .line 443
+    invoke-super {p0, p1}, Landroid/app/Application;->attachBaseContext(Landroid/content/Context;)V
+
+    .line 444
+    nop
+
+    move-result-object v0
+
+    sput-object v0, Lcom/wrapper/proxyapplication/WrapperProxyApplication;->baseContext:Landroid/content/Context;
+
+    .line 445
+    sget-object v0, Lcom/wrapper/proxyapplication/WrapperProxyApplication;->shellApp:Landroid/app/Application;
+
+    if-nez v0, :cond_0
+
+    .line 446
+    sput-object p0, Lcom/wrapper/proxyapplication/WrapperProxyApplication;->shellApp:Landroid/app/Application;
+
+    .line 458
+    :cond_0
+    invoke-direct {p0}, Lcom/wrapper/proxyapplication/WrapperProxyApplication;->Fixappname()Z
+
+    .line 459
+    nop
+
+    nop
+.end method
+
+.method protected abstract initProxyApplication(Landroid/content/Context;)V
+.end method
+
+.method public onCreate()V
+    .locals 0
+
+    .line 465
+    invoke-super {p0}, Landroid/app/Application;->onCreate()V
+
+    .line 466
+    nop
+
+    nop
+.end method

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.biquge.ebook.app.widget.StatusBarView android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/ds">
+            <com.biquge.ebook.app.widget.TitleIndicatorView android:layout_gravity="center" android:id="@id/a6l" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <ImageView android:layout_gravity="right" android:id="@id/mf" android:src="@drawable/fr" style="@style/n3" />
+        </FrameLayout>
+    </LinearLayout>
+    <com.shizhefei.view.viewpager.SViewPager android:id="@id/mg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

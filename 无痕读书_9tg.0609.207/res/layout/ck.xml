@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.biquge.ebook.app.widget.StatusBarView android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/ds">
+            <ImageView android:id="@id/dr" android:src="@drawable/jn" android:scaleType="center" style="@style/n3" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/color_333333" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/po" />
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/a19" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/kb" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="250.0dip">
+                <ImageView android:id="@id/k0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                <com.biquge.ebook.app.widget.ExampleFontTextView android:layout_gravity="center" android:id="@id/k1" android:layout_width="fill_parent" android:layout_height="120.0dip" />
+            </FrameLayout>
+            <com.shizhefei.view.indicator.ScrollIndicatorView android:id="@id/jw" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="60.0dip" />
+            <top.defaults.colorpicker.ColorPickerView android:id="@id/jz" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" app:bz="true" />
+            <LinearLayout android:orientation="horizontal" android:background="#20000000" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/color_ff414c" android:gravity="center" android:id="@id/jy" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="重置" android:layout_weight="1.0" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/color_ff414c" android:gravity="center" android:id="@id/jx" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/j6" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

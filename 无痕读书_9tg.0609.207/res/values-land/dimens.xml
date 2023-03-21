@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_action_bar_default_height_material">48.0dip</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">12.0dip</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">14.0dip</dimen>
+    <dimen name="aa">24.0dip</dimen>
+    <dimen name="ad">24.0dip</dimen>
+    <dimen name="aw">20.0dip</dimen>
+    <dimen name="ay">4.0dip</dimen>
+    <dimen name="b2">96.0dip</dimen>
+    <dimen name="b5">0.0dip</dimen>
+    <dimen name="b6">0.0dip</dimen>
+    <dimen name="b7">104.0dip</dimen>
+    <dimen name="be">68.0dip</dimen>
+    <dimen name="bg">28.0dip</dimen>
+    <dimen name="bh">64.0dip</dimen>
+    <dimen name="bi">32.0dip</dimen>
+    <dimen name="bj">24.0dip</dimen>
+    <dimen name="bk">32.0dip</dimen>
+</resources>

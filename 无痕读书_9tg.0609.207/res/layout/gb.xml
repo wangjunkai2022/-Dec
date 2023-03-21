@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/simple_bg_selector" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.biquge.ebook.app.widget.BookImageView android:id="@id/so" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="@dimen/n" />
+    <TextView android:textSize="@dimen/a2" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@id/sn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:lines="1" />
+</LinearLayout>

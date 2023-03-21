@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/zn" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.swl.gg.widget.SwlAdImageView android:id="@id/zo" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/zm" android:padding="5.0dip" android:visibility="gone" android:layout_width="41.0dip" android:layout_height="41.0dip" android:layout_marginTop="25.0dip" android:src="@drawable/fy" />
+    </LinearLayout>
+    <com.biquge.ebook.app.widget.AppProgressBar android:layout_gravity="center" android:id="@id/zp" android:layout_width="36.0dip" android:layout_height="36.0dip" />
+</FrameLayout>

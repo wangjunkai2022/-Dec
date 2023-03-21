@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/a4x" android:background="@drawable/shape_popup_white_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.shizhefei.view.indicator.ScrollIndicatorView android:id="@id/a4v" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" />
+    <View android:id="@id/a4w" style="@style/sc" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/a4o" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/a4p" android:visibility="gone" android:layout_width="41.0dip" android:layout_height="fill_parent" android:layout_marginTop="6.0dip">
+            <TextView android:textColor="@drawable/b1" android:gravity="center" android:id="@id/a4q" android:background="@drawable/selector_store_left_tab_bg" android:layout_width="fill_parent" android:layout_height="82.0dip" />
+            <TextView android:textColor="@drawable/b1" android:gravity="center" android:id="@id/a4s" android:background="@drawable/selector_store_left_tab_bg" android:layout_width="fill_parent" android:layout_height="82.0dip" android:layout_marginTop="2.0dip" />
+            <TextView android:textColor="@drawable/b1" android:gravity="center" android:id="@id/a4r" android:background="@drawable/selector_store_left_tab_bg" android:layout_width="fill_parent" android:layout_height="82.0dip" android:layout_marginTop="2.0dip" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/a4y" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textSize="15.0sp" android:textColor="@color/main_tab_txt_color" android:gravity="center" android:id="@id/a50" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="7.0dip" android:text="@string/s6" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" />
+</LinearLayout>

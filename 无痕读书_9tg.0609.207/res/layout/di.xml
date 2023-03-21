@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusable="true" android:focusableInTouchMode="true" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.chanven.lib.cptr.PtrClassicFrameLayout android:id="@id/a1_" android:layout_width="fill_parent" android:layout_height="fill_parent" cube_ptr:hz="100" cube_ptr:i0="1000" cube_ptr:i2="true" cube_ptr:i3="false" cube_ptr:i4="1.0" cube_ptr:i5="3.5" xmlns:cube_ptr="http://schemas.android.com/apk/res-auto">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/ne" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+    </com.chanven.lib.cptr.PtrClassicFrameLayout>
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/vx" android:visibility="invisible" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginBottom="50.0dip" android:src="@drawable/f4" android:layout_marginEnd="10.0dip" />
+    <com.manhua.ui.widget.PublicLoadingView android:id="@id/zx" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>
