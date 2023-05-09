@@ -797,29 +797,6 @@
 
 .method public if(Z)V
     .locals 2
-
-    .line 1
-    iget-object v0, p0, Lcom/apk/p;->if:Lcom/biquge/ebook/app/bean/NewVersionBean;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    invoke-virtual {p0}, Lcom/apk/p;->try()V
-
-    return-void
-
-    .line 3
-    :cond_0
-    new-instance v0, Lcom/apk/b1;
-
-    invoke-direct {v0}, Lcom/apk/b1;-><init>()V
-
-    new-instance v1, Lcom/apk/p$do;
-
-    invoke-direct {v1, p0, p1}, Lcom/apk/p$do;-><init>(Lcom/apk/p;Z)V
-
-    invoke-virtual {v0, v1}, Lcom/apk/b1;->do(Lcom/apk/c1;)Lcom/apk/b1;
-
     return-void
 .end method
 
